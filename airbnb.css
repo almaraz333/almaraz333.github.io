@@ -8,6 +8,9 @@ html {
 body{
   background-color: #ffffff ;
 }
+.container{
+  padding-top: 5%;
+}
 #pagetitle{
   font-family: 'Jomolhari', serif;
 }
@@ -28,6 +31,7 @@ body{
 #learnedicon{
   border: none;
   padding-top: 3%;
+  padding-bottom: 3%;
 }
 ul {
     list-style-type: disc;
@@ -91,6 +95,9 @@ a:hover{
 #credit{
   padding-top: 10%;
 }
+#mobilenav{
+  display: none;
+}
 @media (max-width: 576px) {
   #projectoverview, #summary, #pagetitle, #deliverables, #credit, .suggestions, #learned, #process,p,ul,li,h1,img{
     max-width: 90%;
@@ -109,5 +116,65 @@ a:hover{
     border-top: 5px solid black;
     border-bottom: 5px solid black;
     padding-top: 2%;
+  }
+  #home{
+    display: none;
+  }
+  .container{
+    padding-top: 20%;
+  }
+  #mobilenav{
+    display:block;
+  }
+  #mobilenav span{
+    padding-left: 3%;
+    padding-top: 3%;
+    position: fixed;
+    z-index: 999;
+
+  }
+  .sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 999; 
+    top: 0; 
+    left: 0;
+    background-color: #000000; 
+    overflow-x: hidden; 
+    padding-top: 35%; 
+    transition: 0.5s; 
+  }
+  .sidenav img{
+    padding: 5%;
+  }
+  .sidenav a {
+    padding: 5%;
+    text-decoration: none;
+    font-size: 2em;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+  }
+
+  .sidenav a:hover {
+    color: #696969;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 3%;
+    font-size: 4em;
+    margin-left: 50px;
+  }
+  #rec{
+    height: 9%;
+    top: 0;
+    width:100%;
+    background-color: #696969;
+    position: fixed;
+    z-index: 1;
   }
 }

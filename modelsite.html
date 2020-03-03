@@ -11,17 +11,30 @@
     <title>Model Portfolio Site Page</title>
   </head>
   <body>
+    <div id="mobilenav"> 
+      <div id="rec"> </div>
+      <span onclick="openNav()"><img src="mobilenav.png" alt="three horizontal lined representing a menu" sheight=40 width=40/></span>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a onClick="closeNav()" href="index.html"><img src="home.png" alt= "home icon" height=100 width=100/>Home</a>
+      <a onClick="closeNav()" href="index.html#resume"><img src="resume_icon.png" alt= "resume icon" height=100 width=100/>Resume</a>
+      <a onClick="closeNav()" href="index.html#projects"><img src="projects_icon.png" alt= "project list icon" height=100 width=100/>Projects</a>
+      <a onClick="closeNav()" href="index.html#contact"><img src="email_white.png" alt= "email icon" height=100 width=100/>Contact</a>
+    </div>
+  </div>
+
+
     <div class="container">
     <button  onclick="topFunction()" id="myBtn" title="Go to top"><img src="scroll.png" alt="scroll up icon" width="50" height="50" class="img-fluid"></button>
       <div id="nav">
         <div id="home">
-          <h2><a href="index.html">Home</a></h2>
+          <a href="index.html"><img src="home_black.png" alt= "home icon" height=50 width=50></a>
         </div>
       </div>
       <div id ="main" class="row">
         <div class="column" align="center">
-<h1 id="pagetitle">Model Portfolio Site</h1><br /><br />
-<h3 id="summary">A simple site to display high quality modeling photos for agencies and clients.</h3><br><br><br>
+  <h1 id="pagetitle">Model Portfolio Site</h1><br /><br />  
+<h2 id="summary">A simple site to display high quality modeling photos for agencies and clients.</h2><br><br><br>
 
     <h2>Project Overview</h2><br>
     <div id="projectoverview">
@@ -122,24 +135,34 @@ The final deliverable was a professional portfolio site for the client to displa
 </div>
   </div>
 </div>
+</div>
 <script>
-var mybutton = document.getElementById("myBtn");
+mybutton = document.getElementById("myBtn");
 
 
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-  mybutton.style.display = "block";
-} else {
-  mybutton.style.display = "none";
-}
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
 }
 
+
 function topFunction() {
-document.body.scrollTop = 0;
-document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
 }
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+} 
 </script>
   </body>
 </html>

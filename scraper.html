@@ -1,0 +1,165 @@
+</<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+     <link href="https://fonts.googleapis.com/css?family=Jomolhari&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scraper.css">
+    <title>Sports Web Scraper Site Page</title>
+  </head>
+  <body>
+    <div id="mobilenav"> 
+      <div id="rec"> </div>
+      <span onclick="openNav()"><img src="mobilenav.png" alt="three horizontal lined representing a menu" sheight=40 width=40/></span>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a onClick="closeNav()" href="index.html"><img src="home.png" alt= "home icon" height=100 width=100/>Home</a>
+      <a onClick="closeNav()" href="index.html#resume"><img src="resume_icon.png" alt= "resume icon" height=100 width=100/>Resume</a>
+      <a onClick="closeNav()" href="index.html#projects"><img src="projects_icon.png" alt= "project list icon" height=100 width=100/>Projects</a>
+      <a onClick="closeNav()" href="index.html#contact"><img src="email_white.png" alt= "email icon" height=100 width=100/>Contact</a>
+    </div>
+  </div>
+
+
+    <div class="container">
+    <button  onclick="topFunction()" id="myBtn" title="Go to top"><img src="scroll.png" alt="scroll up icon" width="50" height="50" class="img-fluid"></button>
+      <div id="nav">
+        <div id="home">
+          <a href="index.html"><img src="home_black.png" alt= "home icon" height=50 width=50></a>
+        </div>
+      </div>
+      <div id ="main" class="row">
+        <div class="column" align="center">
+  <h1 id="pagetitle">Sports Web Scraper</h1><br /><br />  
+<h2 id="summary">A Python program to gather data on every professional sports player in California from 1965 to now.</h2><br><br><br>
+
+    <h2>Project Overview</h2><br>
+    <div id="projectoverview">
+      <h3>Challenge:</h3>
+      <p>
+        Design and code an automated web scraper to gather the name, team, date of birth, and EAMS claim status on over 30,000 individuals. 
+      </p>
+      <h3>Team:</h3>
+      <p>
+        Myself
+      </p>
+    </div>
+    <img id="homepage" src="sportshomepage.png" alt="screenshot of sports stats site home page" width="700" height="550" class="img-fluid">
+    <div id="process">
+    <br>
+    <h2>The Process</h2>
+    <br>
+    <br>
+    <h3>What is the Goal?</h3>
+    <p>
+      The goal for this project was to create a program to effectively automate a process that would otherwise take weeks to complete. The amount of data this program would have to go though 
+      would be immense. Not only would this program have to be able to search through tens of thousands of people across multiple sites, but it would have to do it efficiently due to time constraints. 
+    </p>
+
+<div>
+<br>
+<br>
+<br>
+<h4>Necessities:</h4>
+<br>
+<div id="necessities">
+  <ul>
+    <li>Fast</li>
+    <li>Flexible</li>
+    <li>Automated</li>
+    <li>Reusable</li>
+    <li>Readable and parsable output</li>
+    <li>Efficient code to reduce runtime</li>
+  </ul>
+  </div>
+</div>
+</div>
+<br>
+<br>
+<div id="multiple_sites">
+  <h3>The Challenge of Multiple Sites</h3>
+  <p>
+    In the research stage of the project I realized I would need to use multiple sites to gather all the data that was needed. This brought up the challenge of creating a flexible program that could navigate and handle the different
+    architectures of each site. Due to this there were very specific restraints on the code. After much testing and retesting I found a way to create a program that could search through
+    different sites and pick up on which people it needed to get information for. 
+  </p>
+</div>
+<br>
+<br>
+<br>
+<div id=learned>
+<h2>What I Learned</h2>
+<p>
+<ol>
+<li>
+    Flexibility is key. When creating programs it is important that the code you write is flexible. There is no way of knowing what kind of problems could arise in real-world situations.
+    This is why your code must be flexible enough to handle any problems that could happen or at the very least be able inform the developer there is a problem so they can fix it. 
+</li>
+<br>
+<img id="learnedicon" src="curlybraces.png" alt="icon of two curly braces" width="200" height="100" class="img-fluid">
+<li>
+    In order to provide a good product and experience you need to keep your client in mind. In this case it was a businessperson who needed the data to be easily readable 
+    and accessible. For this to be the case the output must be formatted correctly. By this I mean taking hundreds of lists, arrays, and key-value pairs and turning them into a 
+    readable file with meaningful categories. 
+</li>
+<br>
+<img id="learnedicon" src="format.png" alt="an icon representing formatted lines" width="200" height="100" class="img-fluid">
+<li>
+    Being able to manage multiple tasks is a huge part of being a professional. This project was long and required a lot of attention but could not impact the quality
+    of other projects I was working on. Taking time to create a good product while also leaving time to make sure other priorities aren't impacted is essential in 
+    a fast-paced environment like today. Being able to balance these tasks is a skill I am proud of.
+</li>
+<br>
+<img id="learnedicon" src="prioritize.png" alt="an icon representing a list with a stop watch" width="200" height="100" class="img-fluid">
+
+</ol>
+</p>
+</div>
+<h2>Deliverables</h2>
+<p id="Deliverables">
+The final deliverable were multiple CSV files based on the team. Due to the size of the data, some file being thousands of lines long, CSV was the best choice for readable, searchable data that 
+could easily be exported.
+<br>
+<br>
+<br>
+<h2 id="sitelink"><img src="csvsheet.png" alt="screenshot of a csv file" width="700" height="550" class="img-fluid"></h2>
+</p>
+<div id="credit">
+  <p>Site Design and Build by Colton Almaraz</p>
+</div>
+  </div>
+</div>
+</div>
+<script>
+mybutton = document.getElementById("myBtn");
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+
+function topFunction() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
+}
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+} 
+</script>
+  </body>
+</html>

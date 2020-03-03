@@ -20,21 +20,37 @@
     <title>Colton Almaraz Portfolio Site</title>
   </head>
   <body>
+    <div id="mobilenav"> 
+      <div id="rec"> </div>
+      <span onclick="openNav()"><img src="mobilenav.png" alt="three horizontal lined representing a menu" sheight=40 width=40/></span>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a onClick="closeNav()" href="#resume"><img src="resume_icon.png" alt= "resume icon" height=100 width=100/>Resume</a>
+      <a onClick="closeNav()" href="#projects"><img src="projects_icon.png" alt= "project list icon" height=100 width=100/>Projects</a>
+      <a onClick="closeNav()" href="#contact"><img src="email_white.png" alt= "email icon" height=100 width=100/>Contact</a>
+    </div>
+  </div>
+    
     <div class="container">
   <button  onclick="topFunction()" id="myBtn" title="Go to top"><img src="scroll.png" alt="scroll up icon" width="50" height="50" class="img-fluid"></button>
-    <div id="nav">
-      <div id="resumelink">
-        <h1><a href="#resume" class="scroll">Resume</a></h1>
-      </div>
-      <div id="portfolio">
-        <h1><a href="#projects">Projects</a></h1>
-      </div>
-      <div id="contactlink">
-        <h1><a href="#contact">Contact</a></h1>
-      </div>
+    <div id="nav" >
+
+        <div id="resumelink">
+          <h1><a href="#resume" >Resume</a></h1>
+        </div>
+        <div id="portfolio">
+          <h1><a href="#projects">Projects</a></h1>
+        </div>
+        <div id="contactlink">
+          <h1><a href="#contact">Contact</a></h1>
+          </div>
+
     </div>
+
+
     <div id="xa">
-      <h1>Experience Architect Designer</h1>
+      <h1>Experience Architect</h1>
+      <h2>Front-End Developer & UX Designer</h2>
     </div>
     <div id="name">
       <h1>Colton Almaraz</h1>
@@ -42,19 +58,30 @@
     <div id="main" class="text-wrap">
       <div class="row">
         <div class="column" align="center">
-      <h2 id="greeting">Hello!</h2>
+      <h2 id="greeting">Hello!</h2><br><br>
+      
       <div id="about">
+        <h3>Who I am</h3>
       <p>
-        I'm an Experience Architect with a passion for creating inclusive and accessible spaces that perform their function as efficiently as
-        possible for the optimal user experience with minimalistic design.<br><br><br><br>
+        My name is Colton Almaraz and I am an Experience Architect with a focus on accessibility. Experience Architecture is designing and creating spaces for people through design and front-end development. It is understdning the users story, catering to that, then taking that story and crafting an accessible, enjoyable experience for them. These spaces can be anything and anywhere but Experience Architecture tends to focus on the digital.
 
-  I strongly believe that any platform should be accessible to everyone and they should be able to utilize it to the best of their abilities.
-  This ensures a good design that leaves a user satisfied and created a space that the user wants to return to and use again. I make it my personal
-  mission in everything I create to adhere to this idea. I view efficiency as the pinnacle of design.
+ I specialize in communicating with clients, deciphering their needs, and using those needs to create an accessible, enjoyable experience for them through UX design and code. My design philosophy is that every experience should be accessible and enjoyable to anyone no matter who they are. Designing/coding something is more than code, it is creating a part of someone's life.  <br><br><br><br>
+      </p>
+      
+ <h3>What I do</h3>
+ <p>
+The experiences I create are a uniquely good mix of efficiency and accessibility. My work helps the user to navigate, enjoy, and want to return to the product. This, in turn, helps the client create a successful product that their user returns to and enjost using. The experiences I create add something to the user's life.  I care about the user having a good experience. I care about the user, the whole point of what I do is to make the user feel welcome and enjoy experiencing what I have created for them.<br><br><br><br>
+</p>
+
+<h3>What I like</h3>
+<p>
+For fun I like to be active. Hiking, going to the gym, or even going on a simple walk with my dog are things I love doing. Anything that gets me outside and moving around is a good time for me. I really like playing tennis so when the weather is good enough I love going to the courts. Other than that I love anything sci-fi. Books, movies, or shows that have anything to do with space are interesting to me. I love everything futuristic. <br><br><br><br>
+
     </p>
     <br><br>
   </div>
-    <div id="resume">
+  <a class="anchor" id="resume"></a>
+    <div class="anchor "id="resume">
       <h1 class="ml5">
         <span class="text-wrapper">
           <span class="line line1"></span>
@@ -71,7 +98,7 @@
     <div id="experience">
     <h3>EXPERIENCE</h3><br><br>
     <p>
-      <h4>Freelance UX Designer, East Lansing<br><br>
+      <h4>Freelance Front-End Developer/UX Designer, East Lansing<br><br>
       October 2019 - PRESENT</h4><br><br>
       <ul>
         <li>Created eCommerce, portfolio, and database driven sites for a variety of clients in all levels of business </li><br><br>
@@ -87,7 +114,7 @@
         <li>Worked alongside a team of MSU professors and developers to create an accessible, user friendly database for all things related to Sherlock Holmes</li><br><br>
         <li>Communicated with clients and team members across the country to develop their idea fully</li><br><br>
         <li>Managed a database of hundreds of items and design an effective way to allow the user to search through their metadata and view them for Watson's Archive</li><br><br>
-        <li>Created and designed a site to effectively display an online representation of physical items for a Sherlock Holmes Museum in a Box</li>
+        <li>Created and designed a site to effectively display an online representation of physical items for a Sherlock Holmes Museum in a Box</li><br><br>
               </ul>
   </p>
       <p>
@@ -104,6 +131,7 @@
                 <div class="col-sm">
                     <h3>Skills</h3>
                         <ul>
+                            <li> ADA & WCAG Compliance</li><br>
                             <li>Interaction Design</li><br>
                             <li>Information Architecture</li><br>
                             <li>User Interface Design</li><br>
@@ -121,13 +149,16 @@
                     <h3>Technical Proficiencies</h3>
                         <div>
                           <ul>
+                          <li>Javascript</li><br>
+                          <li>React</li><br>
+                          <li>HTML5</li><br>
+                          <li>Python</li><br>
+                          <li>CSS3</li><br>
+                          <li>Figma</li><br>
                           <li>Adobe Creative Suite</li><br>
                           <li>Photoshop</li><br>
                           <li>Sketch</li><br>
                           <li>MS Paint</li><br>
-                          <li>HTML5</li><br>
-                          <li>Python</li><br>
-                          <li>CSS3</li><br>
                           <li>Wordpress</li><br>
                           </ul>
                         </div>
@@ -137,8 +168,12 @@
             </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-            <a id="pdfresume" href="resume.pdf">PDF Copy</a>
+            <a id="pdfresume" href="ColtonAlmaraz_resume.pdf">PDF Copy</a>
           </div>
+            <br>
+            <br>
+            <br>
+            <a class="anchor" id="projects"></a>
           <div id="projects">
             <h1 class="ml14">
               <span class="text-wrapper">
@@ -148,13 +183,17 @@
             </h1>
 
             <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-            <div class="row">
+            <div class="row" id="projectgrid">
               <div class = "col" id="projecttitle"><b><h1>Professional Model Portfolio Site</h1></b><br><br>
-                <a href = "modelsite.html"><img  src="modelsiteicon.png" alt="airbnb" width="750" height="230" class="img-fluid"></a>
+                <a href = "modelsite.html"><img  src="modelsiteicon.png" alt="dress icon" width="750" height="230" class="img-fluid"></a>
               </div>
 
               <div class = "col" id="projecttitle"><b><h1>Professional eCommerce Site</h1></b><br><br>
-                <a href = "ecommerce.html"><img  src="money.png" alt="airbnb" width="250" height="200" class="img-fluid"></a>
+                <a href = "ecommerce.html"><img  src="money.png" alt="money icon" width="250" height="200" class="img-fluid"></a>
+              </div>
+
+              <div class = "col" id="projecttitle"><b><h1>Sports Web Scraper</h1></b><br><br>
+                <a href = "scraper.html"><img  src="sports.png" alt="basketball icon" width="250" height="200" class="img-fluid"></a>
               </div>
 
               <div class = "col" id="projecttitle"><b><h1>Airbnb Accessibility Analysis</h1></b><br><br>
@@ -162,6 +201,7 @@
               </div>
             </div>
           </div>
+  <a class="anchor" id="contact"></a>
   <div id="contact">
     <h1 class="ani">
 <span class="text-wrapper">
@@ -169,8 +209,29 @@
 <span class="letters" id="header">Contact</span>
 </span>
 </h1>
+<!--
+<div class="container">
+ <form method="post" action="form.php">
+
+   <label for="name">Name</label>
+   <input type="text"  name="name" placeholder="Your name..">
+
+   <label for="company">Company</label>
+   <input type="text" name="company" placeholder="Your company..">
+
+   <label for="company">Email</label>
+   <input type="text" name="email" placeholder="Your email..">
+
+   <label for="message">Message</label>
+   <textarea  name="message" placeholder="Write something.." style="height:200px"></textarea>
+
+   <input type="submit" value="Submit">
+
+ </form>
+-->
+</div>
   <div id="contacticons">
-    <a href = "mailto:almarazcolton333@gmail.com?Subject=Contact%20You%20About%20Job"><img id="email" src="email.png" alt="icon of letter" width="170" height="100 " class="img-fluid"></a><br>
+    <a href = "mailto:almarazcolton333@gmail.com?Subject=I'd%20Like%20to%20Work%20With%20You"><img id="email" src="email.png" alt="icon of letter" width="170" height="100 " class="img-fluid"></a><br>
     <a href = "https://www.linkedin.com/in/colton-almaraz/"><img id="linkedin" src="linkedin.png" alt="linkedin logo" width="170" height="100 " class="img-fluid"></a>
     </div>
     <div id="credit">
@@ -181,7 +242,7 @@
 </div>
 </div>
 
-    <script>
+<script>
 
     var time = new Date().getHours();
 	var greeting;
@@ -204,108 +265,12 @@
         greeting = other;
     }
 
-    document.getElementById("greeting").innerHTML = greeting;
+  document.getElementById("greeting").innerHTML = greeting;
 
-    var textWrapper = document.querySelector('.ani .letters');
-    textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
 
-    anime.timeline({loop: true})
-      .add({
-        targets: '.ani .line',
-        scaleY: [0,1],
-        opacity: [0.5,1],
-        easing: "easeOutExpo",
-        duration: 700
-      })
-      .add({
-        targets: '.ani .line',
-        translateX: [0, document.querySelector('.ani .letters').getBoundingClientRect().width + 10],
-        easing: "easeOutExpo",
-        duration: 700,
-        delay: 100
-      }).add({
-        targets: '.ani .letter',
-        opacity: [0,1],
-        easing: "easeOutExpo",
-        duration: 600,
-        offset: '-=775',
-        delay: (el, i) => 34 * (i+1)
-      }).add({
-        targets: '.ani',
-        opacity: 0,
-        duration: 1000,
-        easing: "easeOutExpo",
-        delay: 1000
-      });
 
-      anime.timeline({loop: true})
-        .add({
-          targets: '.ml5 .line',
-          opacity: [0.5,1],
-          scaleX: [0, 1],
-          easing: "easeInOutExpo",
-          duration: 700
-        }).add({
-          targets: '.ml5 .line',
-          duration: 600,
-          easing: "easeOutExpo",
-          translateY: (el, i) => (-0.625 + 0.625*4*i) + "em"
-        }).add({
-          targets: '.ml5 .ampersand',
-          opacity: [0,1],
-          scaleY: [.5, 1],
-          easing: "easeOutExpo",
-          duration: 600,
-          offset: '-=600'
-        }).add({
-          targets: '.ml5 .letters-left',
-          opacity: [0,1],
-          translateX: ["0.5em", 0],
-          easing: "easeOutExpo",
-          duration: 600,
-          offset: '-=300'
-        }).add({
-          targets: '.ml5 .letters-right',
-          opacity: [0,1],
-          translateX: ["-0.5em", 0],
-          easing: "easeOutExpo",
-          duration: 600,
-          offset: '-=600'
-        }).add({
-          targets: '.ml5',
-          opacity: 0,
-          duration: 1000,
-          easing: "easeOutExpo",
-          delay: 1000
-        });
-        var textWrapper = document.querySelector('.ml14 .letters');
-        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml14 .line',
-    scaleX: [0,1],
-    opacity: [0.5,1],
-    easing: "easeInOutExpo",
-    duration: 900
-  }).add({
-    targets: '.ml14 .letter',
-    opacity: [0,1],
-    translateX: [40,0],
-    translateZ: 0,
-    scaleX: [0.3, 1],
-    easing: "easeOutExpo",
-    duration: 800,
-    offset: '-=600',
-    delay: (el, i) => 150 + 25 * i
-  }).add({
-    targets: '.ml14',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  });
-  var mybutton = document.getElementById("myBtn");
+mybutton = document.getElementById("myBtn");
 
 
 window.onscroll = function() {scrollFunction()};
@@ -318,10 +283,22 @@ function scrollFunction() {
   }
 }
 
+
 function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
 }
+
+
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+} 
+
 </script>
   </body>
 </html>
