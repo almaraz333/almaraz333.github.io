@@ -14,9 +14,6 @@ html {
   #pagetitle{
     font-family: 'Jomolhari', serif;
   }
-  #sitelink{
-    text-decoration: underline;
-  }
   #projectoverview{
     border-right: 5px solid black;
     border-left: 5px solid black;
@@ -96,7 +93,9 @@ html {
   #myBtn:hover {
     color: black;
   }
-  
+  #github_link{
+    padding-top:5%;
+  }
   #credit{
     padding-top: 10%;
   }

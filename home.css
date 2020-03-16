@@ -195,7 +195,7 @@ position: relative;
   position: fixed;
   bottom: 3%;
   right: 3%;
-  z-index: 99;
+  z-index: 15;
   border: none;
   outline: none;
   background-color:transparent;
@@ -305,7 +305,7 @@ position: relative;
       position: fixed;
       bottom: 5%;
       right: 0%;
-      z-index: 999;
+      z-index: 15;
       border: none;
       outline: none;
       background-color:transparent;
@@ -367,6 +367,9 @@ position: relative;
       background-color: #696969;
       position: fixed;
       z-index: 1;
+    }
+    #projectgrid{
+      grid-template-columns: 1fr;
     }
     
 }
