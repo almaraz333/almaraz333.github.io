@@ -44,7 +44,6 @@
         <div id="contactlink">
           <h1><a href="#contact">Contact</a></h1>
           </div>
-
     </div>
 
 
@@ -55,6 +54,7 @@
     <div id="name">
       <h1>Colton Almaraz</h1>
     </div>
+ 
     <div id="main" class="text-wrap">
       <div class="row">
         <div class="column" align="center">
@@ -104,7 +104,7 @@ For fun I like to be active. Hiking, going to the gym, or even going on a simple
         <li>Created eCommerce, portfolio, and database driven sites for a variety of clients in all levels of business </li><br><br>
         <li>Communicated professionally with and worked to understand clients to develop their idea fully</li><br><br>
         <li>Managed multiple projects concurrently working with different clients and prioritizing workflow</li><br><br>
-        <li>Learned multiple CMS, design, and coding skills while working on projects to deliver a product that exceeds expectations while meeting strict deadlines</li><br><br>
+        <li>Used multiple CMS, design skills, Python, Vanilla Javascript, React.js, CSS, HTML to deploy interactive products</li><br><br>
       </ul>
   </p>
     <p>
@@ -114,7 +114,7 @@ For fun I like to be active. Hiking, going to the gym, or even going on a simple
         <li>Worked alongside a team of MSU professors and developers to create an accessible, user friendly database for all things related to Sherlock Holmes</li><br><br>
         <li>Communicated with clients and team members across the country to develop their idea fully</li><br><br>
         <li>Managed a database of hundreds of items and design an effective way to allow the user to search through their metadata and view them for Watson's Archive</li><br><br>
-        <li>Created and designed a site to effectively display an online representation of physical items for a Sherlock Holmes Museum in a Box</li><br><br>
+        <li>Used HTML, CSS, and Javascript to create accessible products and experiences</li><br><br>
               </ul>
   </p>
       <p>
@@ -151,6 +151,7 @@ For fun I like to be active. Hiking, going to the gym, or even going on a simple
                           <ul>
                           <li>Javascript</li><br>
                           <li>React</li><br>
+                          <li>Vue</li><br>
                           <li>HTML5</li><br>
                           <li>Python</li><br>
                           <li>CSS3</li><br>
@@ -268,18 +269,18 @@ For fun I like to be active. Hiking, going to the gym, or even going on a simple
   document.getElementById("greeting").innerHTML = greeting;
 
 
-
-
 mybutton = document.getElementById("myBtn");
-
+buttonlabel = document.getElementById('button-label');
 
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
+    buttonlabel.style.display = "none";
   } else {
     mybutton.style.display = "none";
+    buttonlabel.style.display = "block";
   }
 }
 

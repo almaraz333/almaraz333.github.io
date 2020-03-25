@@ -7,7 +7,6 @@ html {
 body{
   background-color: #ffffff ;
 }
-
 h1 a,p,li{
   color: #696969;
   font-size: 1.7em;
@@ -30,7 +29,7 @@ h4{
 #name{
   display: flex;
   justify-content: center;
-  margin-top: 5%;
+  margin-top: 15%;
   color: #696969;
 }
 a:hover{
