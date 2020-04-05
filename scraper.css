@@ -64,6 +64,9 @@ html {
     border-bottom: 5px solid black;
     padding-top: 2%;
   }
+  h2:not(#summary){
+    text-decoration: underline;
+  }
   h1,h2,h3,h4,a,{
     color: #242424;
     text-decoration: none;

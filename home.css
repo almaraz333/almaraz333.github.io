@@ -56,13 +56,18 @@ a:hover{
   line-height: 200%;
   text-align: left;
   max-width: 70%;
+  padding-top: 5%;
+}
+#resume h1{
+  text-align: center;
 }
 #about h3{
   text-align: center;
 }
 #projects{
+  padding-top: 5%;
   line-height: 200%;
-  text-align: left;
+  text-align: center;
 }
 #projectgrid{
   display: grid;
@@ -80,6 +85,9 @@ a:hover{
        -moz-transition: all .35s ease-in-out; /* Firefox 5-15 */
          -o-transition: all .35s ease-in-out; /* Opera 12+ */
             transition: all .35s ease-in-out; 
+}
+#contact{
+  padding-top: 5%;
 }
 #contacticons img{
   padding: 20%;
@@ -295,6 +303,9 @@ position: relative;
 }
 
 @media (max-width: 576px) {
+  #nav-line{
+    display: none;
+  }
     #mobilenav{
       display:block;
     }
