@@ -32,6 +32,9 @@ h4{
   margin-top: 15%;
   color: #696969;
 }
+#name h1{
+  font-size: 3em;
+}
 a:hover{
   color: black;
   text-decoration: none;
@@ -55,8 +58,11 @@ a:hover{
 #about, #resume{
   line-height: 200%;
   text-align: left;
-  max-width: 70%;
+  max-width: 75%;
   padding-top: 5%;
+}
+#experience a{
+  font-size: 1.1em;
 }
 #resume h1{
   text-align: center;
@@ -71,7 +77,8 @@ a:hover{
 }
 #projectgrid{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
 }
 #projecttitle img{
   -webkit-transition: all .35s ease-in-out; /* Chrome, Safari 5 */
@@ -109,7 +116,6 @@ a:hover{
   font-weight: 700;
   text-decoration: underline;
 }
-
 a.anchor {
   display: block;
   position: relative;
@@ -127,7 +133,6 @@ a.anchor {
   border-bottom-style: solid;
   border-width: 5px;
 }
-
 #nav{
   display: flex;
   justify-content: space-between;
