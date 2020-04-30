@@ -8,10 +8,6 @@ body {
   background-color: #ffffff;
 }
 
-.container {
-  padding-top: 5%;
-}
-
 #switch-container {
   position: fixed;
   width: 100%;
@@ -84,6 +80,10 @@ input:checked+.slider:before {
   border-radius: 50%;
 }
 
+.container {
+  padding-top: 5%;
+}
+
 #home {
   position: fixed;
   left: 3%;
@@ -92,6 +92,7 @@ input:checked+.slider:before {
 
 #pagetitle {
   font-family: 'Jomolhari', serif;
+  padding-top: 5%;
 }
 
 #projectoverview {
@@ -101,20 +102,18 @@ input:checked+.slider:before {
   padding-right: 1%;
 }
 
-#projectoverview p,
-#process p,
-#learned li {
+li,
+p {
   text-align: left;
 }
 
-#deliverables img {
-  display: flex;
+#team {
   text-align: center;
-  padding-top: 5%;
 }
 
-#improvements {
-  display: absolute;
+#necessities {
+  display: flex;
+  justify-content: center;
 }
 
 #learnedicon {
@@ -198,12 +197,32 @@ a:hover {
   font-size: 50px;
 }
 
+#deliverables img {
+  display: flex;
+  text-align: center;
+  padding-top: 5%;
+}
+
+#deliverables p {
+  text-align: center;
+}
+
+#link {
+  padding-top: 5%;
+  text-decoration: underline;
+}
+
 #myBtn:hover {
   color: black;
 }
 
-#credit {
+#github_link {
+  padding-top: 5%;
+}
+
+#credit p {
   padding-top: 10%;
+  text-align: center;
 }
 
 #mobilenav {

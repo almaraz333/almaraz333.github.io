@@ -1,180 +1,282 @@
 </<!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-     <link href="https://fonts.googleapis.com/css?family=Jomolhari&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="project-style.css">
-    <title>Sherlockian.net Redesign Site Page</title>
-  </head>
-  <body>
-    <div id="mobilenav"> 
-      <div id="rec"> </div>
-      <span onclick="openNav()"><img src="mobilenav.png" alt="three horizontal lined representing a menu" sheight=40 width=40/></span>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Jomolhari&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="project-style.css">
+  <title>Sherlockian.net Redesign Site Page</title>
+</head>
+
+<body>
+  <div id="mobilenav">
+    <div id="rec"> </div>
+    <span onclick="openNav()"><img class='darkmode' src="mobilenav.png" alt="three horizontal lined representing a menu"
+        sheight=40 width=40 /></span>
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a onClick="closeNav()" href="index.html"><img src="home.png" alt= "home icon" height=100 width=100/>Home</a>
-      <a onClick="closeNav()" href="index.html#resume"><img src="resume_icon.png" alt= "resume icon" height=100 width=100/>Resume</a>
-      <a onClick="closeNav()" href="index.html#projects"><img src="projects_icon.png" alt= "project list icon" height=100 width=100/>Projects</a>
-      <a onClick="closeNav()" href="index.html#contact"><img src="email_white.png" alt= "email icon" height=100 width=100/>Contact</a>
+      <a onClick="closeNav()" href="index.html"><img src="home.png" alt="home icon" height=100 width=100 />Home</a>
+      <a onClick="closeNav()" href="index.html#resume"><img src="resume_icon.png" alt="resume icon" height=100
+          width=100 />Resume</a>
+      <a onClick="closeNav()" href="index.html#projects"><img src="projects_icon.png" alt="project list icon" height=100
+          width=100 />Projects</a>
+      <a onClick="closeNav()" href="index.html#contact"><img src="email_white.png" alt="email icon" height=100
+          width=100 />Contact</a>
     </div>
   </div>
+  <div id='switch-container'>
+    <p id='switch-label'>Dark Mode</p>
+    <label class="switch">
+      <input type="checkbox" id='checkbox' onclick="darkMode();">
+      <span class="slider round"></span>
+    </label>
+  </div>
 
-
-    <div class="container">
-    <button  onclick="topFunction()" id="myBtn" title="Go to top"><img src="scroll.png" alt="scroll up icon" width="50" height="50" class="img-fluid"></button>
-      <div id="nav">
-        <div id="home">
-          <a href="index.html"><img src="home_black.png" alt= "home icon" height=50 width=50></a>
-        </div>
+  <div class="container">
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="scroll.png" alt="scroll up icon" width="50"
+        height="50" class="img-fluid darkmode"></button>
+    <div id="nav">
+      <div id="home">
+        <a href="index.html"><img class='darkmode' src="home_black.png" alt="home icon" height=50 width=50></a>
       </div>
-      <div id ="main" class="row">
-        <div class="column" align="center">
-  <h1 id="pagetitle">Sherlockian.net Redesign</h1><br /><br />  
-<h2 id="summary">A redesign of Sherlockian.net for a mobile-first era</h2><br><br><br>
-
-    <h2>Project Overview</h2><br>
-    <div id="projectoverview">
-      <h3>Challenge:</h3>
-      <p>
-        Design and create a site that has mobile first in mind for the modern online era without taking away from the theme and feel of the site while maintaining accessibility. 
-      </p>
-      <h3>Team:</h3>
-      <p>
-        Myself and the Sherlockian.net Team
-      </p>
     </div>
-    <!-- <img id="homepage" src="sherlockian-before.png" alt="screenshot of the old version of Sherlockian.net" width="700" height="550" class="img-fluid"> -->
-    <div id="process">
-    <br>
-    <h2>The Process</h2>
-    <br>
-    <br>
-    <h3>What is the Goal?</h3>
-    <p>
-      The goal for this project was to redesign the site to make it more mobile friendly, more accessible, and get rid of unnecessary components. The main main site was hosted on a CMS so the effectively 
-      implement these changes I had to use the custom code editor and work around what was already there. 
-    </p>
+    <div id="main" class="row">
+      <div class="column" align="center">
+        <h1 id="pagetitle">Sherlockian.net Redesign</h1><br /><br />
+        <h2 id="summary">A redesign of Sherlockian.net for a mobile-first era</h2><br><br><br>
 
-<div>
-<br>
-<br>
-<br>
-<h4>Necessities:</h4>
-<br>
-<div id="necessities">
-  <ul>
-    <li>Accessible</li>
-    <li>Flexible</li>
-    <li>Mobile First</li>
-    <li>Minimal</li>
-    <li>Efficient</li>
-    <li>USer Friendly</li>
-  </ul>
-  </div>
-</div>
-</div>
-<br>
-<br>
-<div id="CMS">
-  <h3>The Challenge of CMS</h3>
-  <p>
-    I usually prefer to code things myself. Using any kind of CMS seems restrictive and limits the capabilities of the product in my opinion. This was the biggest challenge I came
-    across when redesigning this site. Because everything was hosted on a CMS I was forced to use the custom code editor to make the changes that were necessary. This itself was 
-    not the challenge. The challenge was going through the code of the site to know which elements needed to be changed. The project turned out great once I was able 
-    to overcome this challenge and the team was extremely happy. 
-  </p>
-</div>
-<br>
-<br>
-<br>
-<h3>Wireframe</h3>
-  <p>
-     The first thing I did was create a wireframe of what the layout of the site should be. This is usually the first step in my process. It is important to know what kind of 
-     hierarchy your site should have, this is essentially the user experience. At a glance the user shoud be able to identify what is important and what they need. After I got a 
-     good sense of space allocation I was able to move on the next step.
-  </p>
-<br><br><br>
-<img><img id="figma" src="sherlockian-wireframe.png" alt="screenshot of figma wireframe" width="700" height="550" class="img-fluid"></img>
-<br><br><br>
-<h3>Mockup</h3>
-  <p>
-    Using Figma I was able to create mockups from the wireframes of what I wanted the overall site to look/feel like. Using tools like Figma or Sketch really helps the product come together because you are able
-    to easily create an idea, present it to stakeholders, and get feedback through user testing. 
-  </p>
-  <br><br><br>
-  <img><img id="figma" src="sherlockian-mockup.png" alt="screenshot of figma mockup" width="700" height="550" class="img-fluid"></img>
-<br><br><br>
-<div id=learned>
-<h2>What I Learned</h2>
-<p>
-<ol>
-<li>
-    Flexibility when it comes to solutions is essential. This is how they get solved. Being able to look at a problem and see multiple routes to a solution is key to any success. 
-    It is okay if one route leads to a failure, this is why it is important to see every angle possible. If you can see all the angles there is no problem that can't be solved. 
-</li>
-<br>
-<img id="learnedicon" src="problem-solving.png" alt="" width="200" height="100" class="img-fluid">
-<li>
-    Communication with the team is always key. Especially when working with an already existing site. There is a feel to sites that is there on purpose. Everything on the page 
-    is in that place for a reason. Keeping this feel is crucial to the product and the team. This is why communication is so important.
-<br>
-<img id="learnedicon" src="communication.png" alt="" width="200" height="100" class="img-fluid">
-<li>
-  Being part of a team is when everyone comes together for a cause. This is what this project was about. This site had so much content from so many people that it was necessary that 
-  they all be a part of the process. Redesigning something is more than just changing some stuff around to make a page look pretty. It involves the people who first created it. 
-  They know how this content should feel on the site the best. This is why bringing all perspectives of everyone on the team is always important.  
-</li>
-<br>
-<img id="learnedicon" src="team.png" alt="" width="200" height="100" class="img-fluid">
+        <h2>Project Overview</h2><br>
+        <div id="projectoverview">
+          <h3>Challenge:</h3>
+          <p>
+            Design and create a site that has mobile first in mind for the modern online era without taking away from
+            the theme and feel of the site while maintaining accessibility.
+          </p>
+          <br>
+          <br>
+          <h3>Team:</h3>
+          <p id='team'>
+            Myself and the Sherlockian.net Team
+          </p>
+        </div>
+        <div id="process">
+          <br>
+          <h2>The Process</h2>
+          <br>
+          <br>
+          <h3>What is the Goal?</h3>
+          <p>
+            The goal for this project was to redesign the site to make it more mobile friendly, more accessible, and get
+            rid of unnecessary components. The main main site was hosted on a CMS so the effectively
+            implement these changes I had to use the custom code editor and work around what was already there.
+          </p>
 
-</ol>
-</p>
-</div>
-<h2>Deliverables</h2>
-<p id="Deliverables">
-The final deliverable was a redesigned Sherlockian.net. More accessible, more mobile friendly, all around better. 
-<br>
-<br>
-<br>
-<img src="sherlockian-after.png" alt="screenshot of the new updated Sherlockian.net" width="700" height="550" class="img-fluid">
-</p>
-<h3 id='link'><a href='https://sherlockian.net'>Sherlockian.net</h3></a>
-<div id="credit">
-  <p>Site Design and Build by Colton Almaraz</p>
-</div>
+          <div>
+            <br>
+            <br>
+            <br>
+            <h4>Necessities:</h4>
+            <br>
+            <div id="necessities">
+              <ul>
+                <li>Accessible</li>
+                <li>Flexible</li>
+                <li>Mobile First</li>
+                <li>Minimal</li>
+                <li>Efficient</li>
+                <li>USer Friendly</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div id="CMS">
+          <h3>The Challenge of CMS</h3>
+          <p>
+            I usually prefer to code things myself. Using any kind of CMS seems restrictive and limits the capabilities
+            of the product in my opinion. This was the biggest challenge I came
+            across when redesigning this site. Because everything was hosted on a CMS I was forced to use the custom
+            code editor to make the changes that were necessary. This itself was
+            not the challenge. The challenge was going through the code of the site to know which elements needed to be
+            changed. The project turned out great once I was able
+            to overcome this challenge and the team was extremely happy.
+          </p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <h3>Wireframe</h3>
+        <p>
+          The first thing I did was create a wireframe of what the layout of the site should be. This is usually the
+          first step in my process. It is important to know what kind of
+          hierarchy your site should have, this is essentially the user experience. At a glance the user shoud be able
+          to identify what is important and what they need. After I got a
+          good sense of space allocation I was able to move on the next step.
+        </p>
+        <br><br><br>
+        <img><img id="figma" src="sherlockian-wireframe.png" alt="screenshot of figma wireframe" width="700"
+          height="550" class="img-fluid"></img>
+        <br><br><br>
+        <h3>Mockup</h3>
+        <p>
+          Using Figma I was able to create mockups from the wireframes of what I wanted the overall site to look/feel
+          like. Using tools like Figma or Sketch really helps the product come together because you are able
+          to easily create an idea, present it to stakeholders, and get feedback through user testing.
+        </p>
+        <br><br><br>
+        <img><img id="figma" src="sherlockian-mockup.png" alt="screenshot of figma mockup" width="700" height="550"
+          class="img-fluid"></img>
+        <br><br><br>
+        <div id=learned>
+          <h2>What I Learned</h2>
+          <p>
+            <ol>
+              <li>
+                Flexibility when it comes to solutions is essential. This is how they get solved. Being able to look at
+                a problem and see multiple routes to a solution is key to any success.
+                It is okay if one route leads to a failure, this is why it is important to see every angle possible. If
+                you can see all the angles there is no problem that can't be solved.
+              </li>
+              <br>
+              <img id="learnedicon" src="problem-solving.png" alt="" width="200" height="100"
+                class="img-fluid darkmode">
+              <li>
+                Communication with the team is always key. Especially when working with an already existing site. There
+                is a feel to sites that is there on purpose. Everything on the page
+                is in that place for a reason. Keeping this feel is crucial to the product and the team. This is why
+                communication is so important.
+                <br>
+              </li>
+              <img id="learnedicon" src="communication.png" alt="" width="200" height="100" class="img-fluid darkmode">
+              <li>
+                Being part of a team is when everyone comes together for a cause. This is what this project was about.
+                This site had so much content from so many people that it was necessary that
+                they all be a part of the process. Redesigning something is more than just changing some stuff around to
+                make a page look pretty. It involves the people who first created it.
+                They know how this content should feel on the site the best. This is why bringing all perspectives of
+                everyone on the team is always important.
+              </li>
+              <br>
+              <img id="learnedicon" src="team.png" alt="" width="200" height="100" class="img-fluid darkmode">
 
-</div>
-<script>
-mybutton = document.getElementById("myBtn");
+            </ol>
+          </p>
+        </div>
+        <h2>Deliverables</h2>
+        <p id="Deliverables">
+          The final deliverable was a redesigned Sherlockian.net. More accessible, more mobile friendly, all around
+          better.
+          <br>
+          <br>
+          <br>
+        </p>
+        <img src="sherlockian-after.png" alt="screenshot of the new updated Sherlockian.net" width="700" height="550"
+          class="img-fluid">
+        <h3 id='link'><a href='https://sherlockian.net'>Sherlockian.net</h3></a>
+        <div id="credit">
+          <p>Site Design and Build by Colton Almaraz</p>
+        </div>
+
+      </div>
+      <script>
+        mybutton = document.getElementById("myBtn");
 
 
-window.onscroll = function() {scrollFunction()};
+        window.onscroll = function () {
+          scrollFunction()
+        };
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
 
 
-function topFunction() {
-  document.body.scrollTop = 0; 
-  document.documentElement.scrollTop = 0; 
-}
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
 
-function openNav() {
-  document.getElementById("mySidenav").style.width = "100%";
-}
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "100%";
+        }
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-} 
-</script>
-  </body>
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        darkMode = () => {
+          let elements = [];
+          let black_elements = [];
+          let grey_elements = [];
+          let p = document.getElementsByTagName('P');
+          let a = document.getElementsByTagName('A');
+          let li = document.getElementsByTagName('LI');
+          let h1 = document.getElementsByTagName('H1');
+          let h2 = document.getElementsByTagName('H2');
+          let h3 = document.getElementsByTagName('H3');
+          let h4 = document.getElementsByTagName('H4');
+          let rec = document.getElementById('rec');
+          let img = document.getElementsByClassName('darkmode');
+          elements.push(p, a, li, h1, h2, h3, h4);
+          grey_elements.push(p, a, li, h3, h4);
+          black_elements.push(h1, h2);
+          var mediaQuery = window.matchMedia("(max-width: 700px)");
+
+          if (document.getElementById('checkbox').checked) {
+            for (let i = 0; i < img.length; i++) {
+              img[i].style.cssText = '-webkit-filter: invert(1); filter: invert(1);';
+            }
+            document.getElementById('switch-label').textContent = 'Light Mode';
+            document.body.style.backgroundColor = "#000000";
+            rec.style.cssText = 'background-color: #ffffff;';
+            document.getElementById('projectoverview').style.cssText =
+              'border-right: 5px solid #ffffff; border-left: 5px solid #ffffff;  padding-left: 1%;  padding-right: 1%;';
+            for (let i = 0; i < elements.length; i++) {
+              for (let j = 0; j < elements[i].length; j++) {
+                elements[i][j].style.color = '#ffffff'
+              }
+            }
+            if (mediaQuery.matches) {
+              document.getElementById('switch-label').style.color = '#000000';
+              document.getElementById('switch-label').style.fontWeight = '300';
+              document.querySelector('.slider').style.backgroundColor = '#cecece';
+            }
+          } else if (document.getElementById('checkbox').checked === false) {
+            for (let i = 0; i < img.length; i++) {
+              img[i].style.cssText = '-webkit-filter: invert(0); filter: invert(0);';
+            }
+            document.getElementById('switch-label').textContent = 'Dark Mode';
+            document.body.style.backgroundColor = "#ffffff";
+            rec.style.cssText = 'background-color: #000000;';
+            document.getElementById('projectoverview').style.cssText =
+              'border-right: 5px solid #000000; border-left: 5px solid #000000;  padding-left: 1%;  padding-right: 1%;';
+            for (let i = 0; i < grey_elements.length; i++) {
+              for (let j = 0; j < grey_elements[i].length; j++) {
+                grey_elements[i][j].style.color = '#696969'
+              }
+            }
+            for (let i = 0; i < black_elements.length; i++) {
+              for (let j = 0; j < black_elements[i].length; j++) {
+                black_elements[i][j].style.color = '#000000'
+              }
+            }
+            if (mediaQuery.matches) {
+              document.getElementById('switch-label').style.color = '#ffffff';
+              document.getElementById('switch-label').style.fontWeight = '300';
+              document.querySelector('.slider').style.backgroundColor = '#ffffff';
+
+            }
+          }
+        }
+      </script>
+</body>
+
 </html>

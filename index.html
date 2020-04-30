@@ -1,52 +1,60 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156500421-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-156500421-1');
-    </script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-     <link href="https://fonts.googleapis.com/css?family=Jomolhari&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="home.css">
-    <title>Colton Almaraz Portfolio Site</title>
-  </head>
-  <body>
-    <div id="mobilenav"> 
-      <div id="rec"> </div>
-      <span onclick="openNav()"><img src="mobilenav.png" alt="three horizontal lined representing a menu" sheight=40 width=40/></span>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156500421-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-156500421-1');
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Jomolhari&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="home.css">
+  <title>Colton Almaraz Portfolio Site</title>
+</head>
+
+<body>
+  <div id="mobilenav">
+    <div id="rec"> </div>
+    <span onclick="openNav()"><img class='darkmode' src="mobilenav.png" alt="three horizontal lined representing a menu"
+        sheight=40 width=40 /></span>
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a onClick="closeNav()" href="#resume"><img src="resume_icon.png" alt= "resume icon" height=100 width=100/>Resume</a>
-      <a onClick="closeNav()" href="#projects"><img src="projects_icon.png" alt= "project list icon" height=100 width=100/>Projects</a>
-      <a onClick="closeNav()" href="#contact"><img src="email_white.png" alt= "email icon" height=100 width=100/>Contact</a>
+      <a onClick="closeNav()" href="#resume"><img src="resume_icon.png" alt="resume icon" height=100
+          width=100 />Resume</a>
+      <a onClick="closeNav()" href="#projects"><img src="projects_icon.png" alt="project list icon" height=100
+          width=100 />Projects</a>
+      <a onClick="closeNav()" href="#contact"><img src="email_white.png" alt="email icon" height=100
+          width=100 />Contact</a>
     </div>
   </div>
-    
-    <div class="container">
-  <button  onclick="topFunction()" id="myBtn" title="Go to top"><img src="scroll.png" alt="scroll up icon" width="50" height="50" class="img-fluid"></button>
-    <div id="nav" >
 
-        <div id="resumelink">
-          <h1><a href="#resume" >Resume</a></h1>
-        </div>
-        <div id="portfolio">
-          <h1><a href="#projects">Projects</a></h1>
-        </div>
-        <div id="contactlink">
-          <h1><a href="#contact">Contact</a></h1>
-          </div>
+  <div class="container">
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="scroll.png" alt="scroll up icon" width="50"
+        height="50" class="img-fluid darkmode"></button>
+    <div id="nav">
+      <div id="resumelink">
+        <h1><a href="#resume">Resume</a></h1>
+      </div>
+      <div id="portfolio">
+        <h1><a href="#projects">Projects</a></h1>
+      </div>
+      <div id="contactlink">
+        <h1><a href="#contact">Contact</a></h1>
+      </div>
     </div>
     <div id='nav-line'></div>
-
     <div id="xa">
       <h1>Experience Architect</h1>
       <h2>Front-End Developer & UX Designer</h2>
@@ -54,246 +62,368 @@
     <div id="name">
       <h1>Colton Almaraz</h1>
     </div>
- 
+    <div id='switch-container'>
+      <p id='switch-label'>Dark Mode</p>
+      <label class="switch">
+        <input type="checkbox" id='checkbox' onclick="darkMode();">
+        <span class="slider round"></span>
+      </label>
+    </div>
     <div id="main" class="text-wrap">
       <div class="row">
         <div class="column" align="center">
-      <h2 id="greeting">Hello!</h2><br><br>
-      
-      <div id="about">
-        <h3>Who I am</h3>
-      <p>
-        My name is Colton Almaraz and I am an Experience Architect with a focus on accessibility. Experience Architecture is designing and creating spaces for people through design and front-end development. It is understanding the users story, catering to that, then taking that story and crafting an accessible, enjoyable experience for them. These spaces can be anything and anywhere but Experience Architecture tends to focus on the digital.
+          <h2 id="greeting">Hello!</h2><br><br>
 
- I specialize in communicating with clients, deciphering their needs, and using those needs to create an accessible, enjoyable experience for them through UX design and code. My design philosophy is that every experience should be accessible and enjoyable to anyone no matter who they are. Designing/coding something is more than code, it is creating a part of someone's life.  <br><br><br><br>
-      </p>
-      
- <h3>What I do</h3>
- <p>
-The experiences I create are a uniquely good mix of efficiency and accessibility. My work helps the user to navigate, enjoy, and want to return to the product. This, in turn, helps the client create a successful product that their user returns to and enjoys using. The experiences I create add something to the user's life.  I care about the user having a good experience. I care about the user, the whole point of what I do is to make the user feel welcome and enjoy experiencing what I have created for them.<br><br><br><br>
-</p>
+          <div id="about">
+            <h3>Who I am</h3>
+            <p>
+              My name is Colton Almaraz and I am an Experience Architect with a focus on accessibility. Experience
+              Architecture is designing and creating spaces for people through design and front-end development. It is
+              understanding the users story, catering to that, then taking that story and crafting an accessible,
+              enjoyable experience for them. These spaces can be anything and anywhere but Experience Architecture tends
+              to focus on the digital.
 
-<h3>What I like</h3>
-<p>
-For fun I like to be active. Hiking, going to the gym, or even going on a simple walk with my dog are things I love doing. Anything that gets me outside and moving around is a good time for me. I really like playing tennis so when the weather is good enough I love going to the courts. Other than that I love anything sci-fi. Books, movies, or shows that have anything to do with space are interesting to me. I love everything futuristic. <br><br><br><br>
+              I specialize in communicating with clients, deciphering their needs, and using those needs to create an
+              accessible, enjoyable experience for them through UX design and code. My design philosophy is that every
+              experience should be accessible and enjoyable to anyone no matter who they are. Designing/coding something
+              is more than code, it is creating a part of someone's life. <br><br><br><br>
+            </p>
 
-    </p>
-    <br><br>
-  </div>
-  <a class="anchor" id="resume"></a>
-    <div class="anchor "id="resume">
-      <h1 class="ml5">
-        <span class="text-wrapper">
-          <span class="line line1"></span>
-          <span class="letters letters-left" id="header">Resume</span>
-          <span class="line line2"></span>
-        </span>
-      </h1>
-    <h3>EDUCATION</h3><br><br>
-      <p>
-        Michigan State University, East Lansing <br> <i>Bachelor of Arts</i>, Experience Architecture<br><br>
-      </p>
-    <div id="experience">
-    <h3>EXPERIENCE</h3><br><br>
-    <p>
-      <h4>Professional Athletes Healthcare Advocates | <a id="resume-link" href="https://pahahelp.com">pahahelp.com</a> | East Lansing <br> <strong>Software Developer and UX Designer</strong><br><br>
-      January 2020 - PRESENT</h4><br><br>
-      <ul>
-        <li>Created programs to gather and store data on over 30,000 individuals using Python with Selenium and BeautifulSoup</li><br><br>
-        <li>Developed code to scrape data from sites as efficiently as possible using Python algorithms and a solid understanding of data data structures</li><br><br>
-        <li>Designed and consulted on site experience with a focus on ADA/WCAG accessibility compliance</li><br><br>
-      </ul>
-  </p>
-  <p>
-    <h4>Sherlockian | <a id="resume-link" href="https://sherlockian.net">sherlockian.net</a> | East Lansing <br> <strong>Front End Developer and UX Designer</strong><br><br>
-    November 2019 - PRESENT</h4><br><br>
-    <ul>
-      <li>Worked alongside a team of MSU professors and developers to create an accessible, user friendly database for all things related to Sherlock Holmes</li><br><br>
-      <li>Communicated with clients and team members across the country to develop their idea fully</li><br><br>
-      <li>Managed a database of hundreds of items and design an effective way to allow the user to search through their metadata and view them for Watson's Archive</li><br><br>
-      <li>Used HTML, CSS, and Javascript to create accessible products and experiences</li><br><br>
-            </ul>
-</p>
-    <p>
-      <h4>Freelance, East Lansing <br> <strong>Front-End Developer/UX Designer</strong><br><br>
-      October 2019 - PRESENT</h4><br><br>
-      <ul>
-        <li>Created eCommerce, portfolio, and database driven sites for a variety of clients in all levels of business </li><br><br>
-        <li>Communicated professionally with and worked to understand clients to develop their idea fully</li><br><br>
-        <li>Managed multiple projects concurrently working with different clients and prioritizing workflow</li><br><br>
-        <li>Used multiple CMS, design skills, Python, Vanilla Javascript, React.js, CSS, HTML to deploy interactive products</li><br><br>
-      </ul>
-  </p>
-  </div>
+            <h3>What I do</h3>
+            <p>
+              The experiences I create are a uniquely good mix of efficiency and accessibility. My work helps the user
+              to navigate, enjoy, and want to return to the product. This, in turn, helps the client create a successful
+              product that their user returns to and enjoys using. The experiences I create add something to the user's
+              life. I care about the user having a good experience. I care about the user, the whole point of what I do
+              is to make the user feel welcome and enjoy experiencing what I have created for them.<br><br><br><br>
+            </p>
+
+            <h3>What I like</h3>
+            <p>
+              For fun I like to be active. Hiking, going to the gym, or even going on a simple walk with my dog are
+              things I love doing. Anything that gets me outside and moving around is a good time for me. I really like
+              playing tennis so when the weather is good enough I love going to the courts. Other than that I love
+              anything sci-fi. Books, movies, or shows that have anything to do with space are interesting to me. I love
+              everything futuristic. <br><br><br><br>
+
+            </p>
+            <br><br>
+          </div>
+          <a class="anchor" id="resume"></a>
+          <div class="anchor " id="resume">
+            <h1 id='header'>Resume</h1>
+            <a id="resume_link" href="ColtonAlmaraz_resume.pdf">PDF Copy</a>
+            <h2>EDUCATION</h2><br><br>
+            <p>
+              Michigan State University, East Lansing <br> <i>Bachelor of Arts</i>, Experience Architecture<br><br>
+            </p>
+            <div id="experience">
+              <h2>EXPERIENCE</h2><br><br>
+              <p>
+                <h4>Professional Athletes Healthcare Advocates | <a id="resume-link"
+                    href="https://pahahelp.com">pahahelp.com</a> | East Lansing <br> <strong>Software Developer and UX
+                    Designer</strong><br><br>
+                  January 2020 - PRESENT</h4><br><br>
+                <ul>
+                  <li>Created programs to gather and store data on over 30,000 individuals using Python with Selenium
+                    and BeautifulSoup</li><br><br>
+                  <li>Developed code to scrape data from sites as efficiently as possible using Python algorithms and a
+                    solid understanding of data data structures</li><br><br>
+                  <li>Designed and consulted on site experience with a focus on ADA/WCAG accessibility compliance</li>
+                  <br><br>
+                </ul>
+              </p>
+              <p>
+                <h4>Sherlockian | <a id="resume-link" href="https://sherlockian.net">sherlockian.net</a> | East Lansing
+                  <br> <strong>Front End Developer and UX Designer</strong><br><br>
+                  November 2019 - PRESENT</h4><br><br>
+                <ul>
+                  <li>Worked alongside a team of MSU professors and developers to create an accessible, user friendly
+                    database for all things related to Sherlock Holmes</li><br><br>
+                  <li>Communicated with clients and team members across the country to develop their idea fully</li>
+                  <br><br>
+                  <li>Managed a database of hundreds of items and design an effective way to allow the user to search
+                    through their metadata and view them for Watson's Archive</li><br><br>
+                  <li>Used HTML, CSS, and Javascript to create accessible products and experiences</li><br><br>
+                </ul>
+              </p>
+              <p>
+                <h4>Freelance, East Lansing <br> <strong>Front-End Developer/UX Designer</strong><br><br>
+                  October 2019 - PRESENT</h4><br><br>
+                <ul>
+                  <li>Created eCommerce, portfolio, and database driven sites for a variety of clients in all levels of
+                    business </li><br><br>
+                  <li>Communicated professionally with and worked to understand clients to develop their idea fully</li>
+                  <br><br>
+                  <li>Managed multiple projects concurrently working with different clients and prioritizing workflow
+                  </li><br><br>
+                  <li>Used multiple CMS, design skills, Python, Vanilla Javascript, React.js, CSS, HTML to deploy
+                    interactive products</li><br><br>
+                </ul>
+              </p>
+            </div>
             <div id="skills" class="container">
               <div class="row">
                 <div class="col-sm">
-                    <h3>Skills</h3>
-                        <ul>
-                            <li> ADA & WCAG Compliance</li><br>
-                            <li>Interaction Design</li><br>
-                            <li>Information Architecture</li><br>
-                            <li>User Interface Design</li><br>
-                            <li>Usability Testing</li><br>
-                            <li>Wireframing</li><br>
-                            <li>Digital Prototyping</li><br>
-                            <li>Iterative Design</li><br>
-                            <li>Content Management</li><br>
-                            <li>Content Design</li><br>
-                            <li>Visual Design</li><br>
-                            <li>Accessibility Evaluation</li><br>
-                        </ul>
+                  <h3>Design Skills</h3>
+                  <ul>
+                    <li> ADA & WCAG Compliance</li><br>
+                    <li>Interaction Design</li><br>
+                    <li>Information Architecture</li><br>
+                    <li>User Interface Design</li><br>
+                    <li>Usability Testing</li><br>
+                    <li>Wireframing</li><br>
+                    <li>Digital Prototyping</li><br>
+                    <li>Iterative Design</li><br>
+                    <li>Content Management</li><br>
+                    <li>Content Design</li><br>
+                    <li>Visual Design</li><br>
+                    <li>Accessibility Evaluation</li><br>
+                  </ul>
                 </div>
                 <div class="col-sm">
-                    <h3>Technical Proficiencies</h3>
-                        <div>
-                          <ul>
-                          <li>Javascript</li><br>
-                          <li>React</li><br>
-                          <li>Vue</li><br>
-                          <li>HTML5</li><br>
-                          <li>Python</li><br>
-                          <li>CSS3</li><br>
-                          <li>Figma</li><br>
-                          <li>Adobe Creative Suite</li><br>
-                          <li>Photoshop</li><br>
-                          <li>Sketch</li><br>
-                          <li>MS Paint</li><br>
-                          <li>Wordpress</li><br>
-                          <li>Agile Methodology</li><br>
-                          </ul>
-                        </div>
-                    <br/>
+                  <h3>Technical Skills</h3>
+                  <div>
+                    <ul>
+                      <li>Javascript</li><br>
+                      <li>React</li><br>
+                      <li>Vue</li><br>
+                      <li>HTML5</li><br>
+                      <li>Python</li><br>
+                      <li>CSS3</li><br>
+                      <li>Figma</li><br>
+                      <li>Adobe Creative Suite</li><br>
+                      <li>Photoshop</li><br>
+                      <li>Sketch</li><br>
+                      <li>MS Paint</li><br>
+                      <li>Wordpress</li><br>
+                      <li>Agile Methodology</li><br>
+                    </ul>
+                  </div>
+                  <br />
                 </div>
               </div>
             </div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-            <a id="pdfresume" href="ColtonAlmaraz_resume.pdf">PDF Copy</a>
           </div>
-            <br>
-            <br>
-            <br>
-            <a class="anchor" id="projects"></a>
+          <br>
+          <br>
+          <br>
+          <a class="anchor" id="projects"></a>
           <div id="projects">
-            <h1 class="ml14">
-              <span class="text-wrapper">
-                <span class="letters" id="header">Projects</span>
-                <span class="line"></span>
-              </span>
-            </h1>
+            <h1 id='header'>Projects</h1>
 
             <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
             <div class="row" id="projectgrid">
-              <div class = "col" id="projecttitle"><h1>Sherlockian.net Site Redesign</h1></b><br><br>
-                <a href = "sherlockian-redesign.html"><img  src="design.png" alt="icon of design plans" width="200" height="100" class="img-fluid"></a>
+              <div class="col project">
+                <div class='projecttitle'>
+                  <h1>Sherlockian.net Site Redesign</h1>
+                </div>
+                </b><br><br>
+                <a href="sherlockian-redesign.html"><img style="padding-top: 20%;" src="sherlockian-logo.png"
+                    alt="icon of design plans" width="300" height="200" class="img-fluid"></a>
               </div>
 
-              <div class = "col" id="projecttitle"><h1>Near Earth Object React App</h1></b><br><br>
-                <a href = "near-earth-objects.html"><img  src="react.png" alt="react logo" width="500" height="300" class="img-fluid"></a>
+              <div class="col project">
+                <div class='projecttitle'>
+                  <h1>Near Earth Object React App</h1>
+                </div>
+                </b><br><br>
+                <a href="near-earth-objects.html"><img src="react.png" alt="react logo" width="500" height="300"
+                    class="img-fluid"></a>
               </div>
 
-              <div class = "col" id="projecttitle" style="place-self: start;"><h1>PAHA.com Site Redesign</h1></b><br><br>
-                <a href = "PAHA-redesign.html"><img src="paha-logo.png" alt="Professional Athletes Healthcare Advocates logo" width="500" height="300" class="img-fluid"></a>
+              <div class="col project" style="place-self: start;">
+                <div class='projecttitle'>
+                  <h1>PAHA.com Site Redesign</h1>
+                </div>
+                </b><br><br>
+                <a href="PAHA-redesign.html"><img style="padding-top: 10%;" src="paha-logo.png"
+                    alt="Professional Athletes Healthcare Advocates logo" width="500" height="300"
+                    class="img-fluid"></a>
               </div>
 
-              <div class = "col" id="projecttitle"><h1>Professional Model Portfolio Site</h1></b><br><br>
-                <a href = "modelsite.html"><img  src="modelsiteicon.png" alt="dress icon" width="200" height="100" class="img-fluid"></a>
+              <div class="col project">
+                <div class='projecttitle'>
+                  <h1>Professional Model Portfolio Site</h1>
+                </div>
+                </b><br><br>
+                <a href="modelsite.html"><img src="modelsiteicon.png" alt="dress icon" width="200" height="100"
+                    class="img-fluid darkmode"></a>
               </div>
 
-              <div class = "col" id="projecttitle"><h1>Professional eCommerce Site</h1></b><br><br>
-                <a href = "ecommerce.html"><img  src="money.png" alt="money icon" width="200" height="100" class="img-fluid"></a>
+              <div class="col project">
+                <div class='projecttitle'>
+                  <h1>Professional eCommerce Site</h1>
+                </div>
+                </b><br><br>
+                <a href="ecommerce.html"><img src="money.png" alt="money icon" width="200" height="100"
+                    class="img-fluid darkmode"></a>
               </div>
 
-              <div class = "col" id="projecttitle"><h1>Sports Info Web Scraper</h1></b><br><br>
-                <a href = "scraper.html"><img src="sports.png" alt="basketball icon" width="200" height="100" class="img-fluid"></a>
+              <div class="col project">
+                <div class='projecttitle'>
+                  <h1>Sports Info Web Scraper</h1>
+                </div>
+                </b><br><br>
+                <a href="scraper.html"><img src="sports.png" alt="basketball icon" width="200" height="100"
+                    class="img-fluid darkmode"></a>
               </div>
 
-              <div class = "col" id="projecttitle"><h1>Airbnb Accessibility Analysis</h1></b><br><br>
-                <a href = "airbnb.html"><img  src="airbnblogo.png" alt="airbnb" width="300" height="200" class="img-fluid"></a>
+              <div class="col project">
+                <div class='projecttitle'>
+                  <h1>Airbnb Accessibility Analysis</h1>
+                </div>
+                </b><br><br>
+                <a href="airbnb.html"><img src="airbnblogo.png" alt="airbnb" width="300" height="200"
+                    class="img-fluid"></a>
               </div>
             </div>
           </div>
-  <a class="anchor" id="contact"></a>
-  <div id="contact">
-    <h1 class="ani">
-    <span class="text-wrapper">
-    <span class="line line1"></span>
-    <span class="letters" id="header">Contact</span>
-    </span>
-    </h1>
+          <a class="anchor" id="contact"></a>
+          <div id="contact">
+            <h1 id='header'>Contact</h1>
 
 
-    <div id="contacticons">
-    <a href = "mailto:almarazcolton333@gmail.com?Subject=I'd%20Like%20to%20Work%20With%20You"><img id="email" src="email.png" alt="icon of letter" width="170" height="100 " class="img-fluid"></a><br>
-    <a href = "https://www.linkedin.com/in/colton-almaraz/"><img id="linkedin" src="linkedin.png" alt="linkedin logo" width="170" height="100 " class="img-fluid"></a>
+            <div id="contacticons">
+              <a href="mailto:almarazcolton333@gmail.com?Subject=I'd%20Like%20to%20Work%20With%20You"><img id="email"
+                  src="email.png" alt="icon of letter" width="170" height="100 " class="img-fluid darkmode"></a><br>
+              <a href="https://www.linkedin.com/in/colton-almaraz/"><img id="linkedin" src="linkedin.png"
+                  alt="linkedin logo" width="170" height="100 " class="img-fluid darkmode"></a>
+            </div>
+          </div>
+          <div id="credit">
+            <p>Site Design and Build by Colton Almaraz</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-    <div id="credit">
-      <p>Site Design and Build by Colton Almaraz</p>
-    </div>
-  </div>
-</div>
-</div>
-</div>
 
-<script>
+  <script>
+    let time = new Date().getHours();
+    let greeting;
 
-    var time = new Date().getHours();
-	var greeting;
+    let morning = ("Good morning!");
+    let afternoon = ("Good afternoon!");
+    let evening = ("Good evening!");
+    let other = ("Hello!");
 
-	var morning = ("Good morning!");
-	var afternoon = ("Good afternoon!");
-	var evening = ("Good evening!");
-    var other = ("Hello!");
+    if (time >= 0 && time < 12) {
+      greeting = morning;
 
-	if (time >= 0 && time < 12) {
-		greeting = morning;
+    } else if (time >= 12 && time < 18) {
+      greeting = afternoon;
 
-	} else if (time >= 12 && time < 18) {
-		greeting = afternoon;
+    } else if (time >= 17 && time < 24) {
+      greeting = evening;
 
-	} else if (time >= 17 && time < 24) {
-		greeting = evening;
-
-	} else {
-        greeting = other;
+    } else {
+      greeting = other;
     }
 
-  document.getElementById("greeting").innerHTML = greeting;
+    document.getElementById("greeting").innerHTML = greeting;
 
 
-mybutton = document.getElementById("myBtn");
-buttonlabel = document.getElementById('button-label');
+    mybutton = document.getElementById("myBtn");
+    buttonlabel = document.getElementById('button-label');
 
-window.onscroll = function() {scrollFunction()};
+    window.onscroll = function () {
+      scrollFunction()
+    };
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-    buttonlabel.style.display = "none";
-  } else {
-    mybutton.style.display = "none";
-    buttonlabel.style.display = "block";
-  }
-}
-
-
-function topFunction() {
-  document.body.scrollTop = 0; 
-  document.documentElement.scrollTop = 0; 
-}
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+        buttonlabel.style.display = "none";
+      } else {
+        mybutton.style.display = "none";
+        buttonlabel.style.display = "block";
+      }
+    }
 
 
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
 
-function openNav() {
-  document.getElementById("mySidenav").style.width = "100%";
-}
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-} 
 
-</script>
-  </body>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+
+    darkMode = () => {
+      let elements = [];
+      let black_elements = [];
+      let grey_elements = [];
+      let p = document.getElementsByTagName('P');
+      let a = document.getElementsByTagName('A');
+      let li = document.getElementsByTagName('LI');
+      let h1 = document.getElementsByTagName('H1');
+      let h2 = document.getElementsByTagName('H2');
+      let h3 = document.getElementsByTagName('H3');
+      let h4 = document.getElementsByTagName('H4');
+      let project = document.getElementsByClassName('projecttitle');
+      let rec = document.getElementById('rec');
+      let img = document.getElementsByClassName('darkmode');
+      elements.push(p, a, li, h1, h2, h3, h4);
+      grey_elements.push(p, a, li, h3, h4);
+      black_elements.push(h1, h2);
+      var mediaQuery = window.matchMedia("(max-width: 700px)");
+      if (document.getElementById('checkbox').checked) { // Dark Mode On
+        for (let i = 0; i < img.length; i++) {
+          img[i].style.cssText = '-webkit-filter: invert(1); filter: invert(1);';
+        }
+        document.getElementById('switch-label').textContent = 'Light Mode';
+        document.body.style.backgroundColor = "#000000";
+        rec.style.cssText = 'background-color: #ffffff;';
+        for (let i = 0; i < project.length; i++) {
+          project[i].style.cssText = 'border-bottom: solid #ffffff 5px;';
+        }
+        for (let i = 0; i < elements.length; i++) {
+          for (let j = 0; j < elements[i].length; j++) {
+            elements[i][j].style.color = '#ffffff'
+          }
+        }
+        if (mediaQuery.matches) {
+          document.getElementById('switch-label').style.color = '#000000';
+          document.getElementById('switch-label').style.fontWeight = '300';
+          document.querySelector('.slider').style.backgroundColor = '#cecece';
+        }
+      } else if (document.getElementById('checkbox').checked === false) { //Dark Mode Off
+        for (let i = 0; i < img.length; i++) {
+          img[i].style.cssText = '-webkit-filter: invert(0); filter: invert(0);';
+        }
+        document.getElementById('switch-label').textContent = 'Dark Mode';
+        document.body.style.backgroundColor = "#ffffff";
+        rec.style.cssText = 'background-color: #000000;';
+        for (let i = 0; i < project.length; i++) {
+          project[i].style.cssText = 'border-bottom: solid #000000 5px;';
+        }
+        for (let i = 0; i < grey_elements.length; i++) {
+          for (let j = 0; j < grey_elements[i].length; j++) {
+            grey_elements[i][j].style.color = '#696969'
+          }
+        }
+        for (let i = 0; i < black_elements.length; i++) {
+          for (let j = 0; j < black_elements[i].length; j++) {
+            black_elements[i][j].style.color = '#000000'
+          }
+        }
+        if (mediaQuery.matches) {
+          document.getElementById('switch-label').style.color = '#ffffff';
+          document.getElementById('switch-label').style.fontWeight = '300';
+          document.querySelector('.slider').style.backgroundColor = '#ffffff';
+
+        }
+      }
+    }
+  </script>
+</body>
+
 </html>

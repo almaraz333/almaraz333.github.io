@@ -1,181 +1,282 @@
 </<!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-     <link href="https://fonts.googleapis.com/css?family=Jomolhari&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="modelsite.css">
-    <title>eCommerce Site Page</title>
-  </head>
-  <body>
-    <div id="mobilenav"> 
-      <div id="rec"> </div>
-      <span onclick="openNav()"><img src="mobilenav.png" alt="three horizontal lined representing a menu" sheight=40 width=40/></span>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Jomolhari&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="project-style.css">
+  <title>eCommerce Site Page</title>
+</head>
+
+<body>
+  <div id="mobilenav">
+    <div id="rec"> </div>
+    <span onclick="openNav()"><img class='darkmode' src="mobilenav.png" alt="three horizontal lined representing a menu"
+        sheight=40 width=40 /></span>
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a onClick="closeNav()" href="index.html"><img src="home.png" alt= "home icon" height=100 width=100/>Home</a>
-      <a onClick="closeNav()" href="index.html#resume"><img src="resume_icon.png" alt= "resume icon" height=100 width=100/>Resume</a>
-      <a onClick="closeNav()" href="index.html#projects"><img src="projects_icon.png" alt= "project list icon" height=100 width=100/>Projects</a>
-      <a onClick="closeNav()" href="index.html#contact"><img src="email_white.png" alt= "email icon" height=100 width=100/>Contact</a>
+      <a onClick="closeNav()" href="index.html"><img src="home.png" alt="home icon" height=100 width=100 />Home</a>
+      <a onClick="closeNav()" href="index.html#resume"><img src="resume_icon.png" alt="resume icon" height=100
+          width=100 />Resume</a>
+      <a onClick="closeNav()" href="index.html#projects"><img src="projects_icon.png" alt="project list icon" height=100
+          width=100 />Projects</a>
+      <a onClick="closeNav()" href="index.html#contact"><img src="email_white.png" alt="email icon" height=100
+          width=100 />Contact</a>
     </div>
   </div>
-    <div class="container">
-    <button  onclick="topFunction()" id="myBtn" title="Go to top"><img src="scroll.png" alt="scroll up icon" width="50" height="50" class="img-fluid"></button>
-      <div id="nav">
-        <div id="home">
-          <a href="index.html"><img src="home_black.png" alt= "home icon" height=50 width=50></a>
+  <div id='switch-container'>
+    <p id='switch-label'>Dark Mode</p>
+    <label class="switch">
+      <input type="checkbox" id='checkbox' onclick="darkMode();">
+      <span class="slider round"></span>
+    </label>
+  </div>
+  <div class="container">
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="scroll.png" alt="scroll up icon" width="50"
+        height="50" class="img-fluid darkmode"></button>
+    <div id="nav">
+      <div id="home">
+        <a href="index.html"><img class='darkmode' src="home_black.png" alt="home icon" height=50 width=50></a>
+      </div>
+    </div>
+    <div id="main" class="row">
+      <div class="column" align="center">
+        <h1 id="pagetitle">Professional eCommerce Site</h1><br /><br />
+        <h2 id="summary">A professional online clothing store to sell the client's artwork.</h2><br><br><br>
+
+        <h2>Project Overview</h2><br>
+        <div id="projectoverview">
+          <h3>Challenge:</h3>
+          <p>
+            There is a fine line between suggesting the user do something while
+            maintaining a good experience and manipulating the user by restricting their choices. It was important to
+            design this site to meet the client's expectations while also keeping
+            the user in mind.
+          </p>
+          <br>
+          <br>
+          <h3>Team:</h3>
+          <p id="team">
+            Myself
+          </p>
+        </div>
+        <img id="homepage" src="ecommercehomepage.png" alt="home page of project" width="700" height="550"
+          class="img-fluid">
+        <div id="process">
+          <br>
+          <h2>The Process</h2>
+          <br>
+          <br>
+          <h3>What is the Goal?</h3>
+          <p>
+            To design a user-friendly, accessible platform for the client to sell their products. The art used on the
+            products was very personal to the client so it was very
+            important that they be able to showcase it to the user. Creating an eCommerce site is tricky. There are so
+            many out there
+          </p>
+
+          <div>
+            <br>
+            <br>
+            <br>
+            <h4>Necessities:</h4>
+            <br>
+            <div id="necessities">
+              <ul>
+                <li>Express the ethos of the brand </li>
+                <li>Sleek, minimalist design </li>
+                <li>Focus on the art</li>
+                <li>Accessible</li>
+                <li>Easily navigable IA</li>
+                <li>Simple UI</li>
+                <li>Show off creativity of artist</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div id="book">
+          <h3>Social Media</h3>
+          <p>
+            The only content the client had at the time were the physical products so I contacted local models and set
+            up a photo shoot for their products. This is when my role expanded
+            from a UX designer to more of a projects manager role while also fulfilling the needs of UX Design. After
+            creating content for the site I edited the photos using Adobe Photoshop
+            and optimize them for social media and the site. When the content was ready to be delivered I met with the
+            artist and we discussed possible captions for the pictures. This was important
+            because they would be the user's first impression of the brand. This would be the way they created a bond
+            with the user.
+          </p>
+          <img id="learnedicon" src="ecommerceinsta.png" alt="screen shot of brand's instagram page" width="700"
+            height="550" class="img-fluid">
+        </div>
+        <br>
+        <br>
+        <div id="book">
+          <h3>Managing the Project</h3>
+          <p>
+            As this project developed it became clear that my role was not only a UX designer but also a project
+            manager. I was the only other person on the team besides the artist
+            so everything besides creating the designs was my responsibility. This was a great chance to expand my
+            skills as a leader and put together a project from scratch. The biggest
+            challenge I faced was gathering/creating the resources that would be needed for this project to be a
+            success. This was something I had never done before and I was excited
+            to dive in head first. Through reading documentation and experimenting I was able to work with the tools
+            that were provided and in the end deliver a site that the client was happy
+            with.
+          </p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div id=learned>
+          <h2>What I Learned</h2>
+          <p>
+            <ol>
+              <img id="learnedicon" src="prioritize.png" alt="icon representing a checklist and timer" width="200"
+                height="100" class="img-fluid darkmode">
+              <li>
+                Managing a project requires a great amount of attention. To be successful you must be able to prioritize
+                while keeping in mind deadlines. Being able to focus on multiple things and keep them on
+                track is a huge factor in a projects outcome.
+              </li>
+              <br>
+              <img id="learnedicon" src="team.png" alt="icon representing a team" width="200" height="100"
+                class="img-fluid darkmode">
+              <li>
+                Delegating tasks is just as important as being able to prioritize. When a project requires multiple
+                tasks to be done at the same time there might not be enough time or resources for one person
+                to complete it themselves. This is why delegating is important. It can save a project and while creating
+                this site it was essential that I delegate tasks so the deadline was met.
+              </li>
+              <br>
+              <br>
+              <img id="learnedicon" src="leader.png" alt="icon representing an idea" width="200" height="100"
+                class="img-fluid darkmode">
+              <li>
+                Being able to prioritize and delegate is important but to be an effective leader you must know how to
+                communicate with people. This is more than listening and responding to them, it's a more
+                active skill that requires you to understand a person and empathize with their needs. When you are able
+                to understand their needs you are able to be a better leader.
+              </li>
+              <br>
+              <br>
+            </ol>
+          </p>
+        </div>
+        <h2>Deliverables</h2>
+        <p id="Deliverables">
+          The final deliverable was a professional eCommerce site for the client to display their art and monetize it.
+          <br>
+          <br>
+          <br>
+          <h2 id="link"><a href="https://moderatelycoolclothing.com">Professional eCommerce Site</a></h2>
+          <h3>(Site Currently Paused)</h3>
+        </p>
+        <div id="credit">
+          <p>Site Design and Build by Colton Almaraz</p>
         </div>
       </div>
-      <div id ="main" class="row">
-        <div class="column" align="center">
-<h1 id="pagetitle">Professional eCommerce Site</h1><br /><br />
-<h2 id="summary">A professional online clothing store to sell the client's artwork.</h2><br><br><br>
-
-    <h2>Project Overview</h2><br>
-    <div id="projectoverview">
-      <h3>Challenge:</h3>
-      <p>
-        There is a fine line between suggesting the user do something while
-        maintaining a good experience and manipulating the user by restricting  their choices. It was important to design this site to meet the client's expectations while also keeping
-        the user in mind.
-      </p>
-      <h3>Team:</h3>
-      <p>
-        Myself
-      </p>
     </div>
-    <img id="homepage" src="ecommercehomepage.png" alt="home page of project" width="700" height="550" class="img-fluid">
-    <div id="process">
-    <br>
-    <h2>The Process</h2>
-    <br>
-    <br>
-    <h3>What is the Goal?</h3>
-    <p>
-      To design a user-friendly, accessible platform for the client to sell their products. The art used on the products was very personal to the client so it was very
-      important that they be able to showcase it to the user. Creating an eCommerce site is tricky. There are so many out there
-    </p>
-
-<div>
-<br>
-<br>
-<br>
-<h4>Necessities:</h4>
-<br>
-<div id="necessities">
-  <ul>
-    <li>Express the ethos of the brand  </li>
-    <li>Sleek, minimalist design </li>
-    <li>Focus on the art</li>
-    <li>Accessible</li>
-    <li>Easily navigable IA</li>
-    <li>Simple UI</li>
-    <li>Show off creativity of artist</li>
-  </ul>
-  </div>
-</div>
-</div>
-<br>
-<br>
-<div id="book">
-  <h3>Social Media</h3>
-  <p>
-    The only content the client had at the time were the physical products so I contacted local models and set up a photo shoot for their products. This is when my role expanded
-    from a UX designer to more of a projects manager role while also fulfilling the needs of UX Design. After creating content for the site I edited the photos using Adobe Photoshop
-    and optimize them for social media and the site. When the content was ready to be delivered I met with the artist and we discussed possible captions for the pictures. This was important
-    because they would be the user's first impression of the brand. This would be the way they created a bond with the user.
-  </p>
-  <img id="learnedicon" src="ecommerceinsta.png" alt="screen shot of brand's instagram page" width="700" height="550" class="img-fluid">
-</div>
-<br>
-<br>
-<div id="book">
-  <h3>Managing the Project</h3>
-  <p>
-    As this project developed it became clear that my role was not only a UX designer but also a project manager. I was the only other person on the team besides the artist
-    so everything besides creating the designs was my responsibility. This was a great chance to expand my skills as a leader and put together a project from scratch. The biggest
-    challenge I faced was gathering/creating the resources that would be needed for this project to be a success. This was something I had never done before and I was excited
-    to dive in head first. Through reading documentation and experimenting I was able to work with the tools that were provided and in the end deliver a site that the client was happy
-    with.
-  </p>
-  <!--
-  <img id="learnedicon" src="" alt="" width="700" height="550" class="img-fluid">
-  -->
-</div>
-<br>
-<br>
-<br>
-<div id=learned>
-<h2>What I Learned</h2>
-<p>
-<ol>
-  <img id="learnedicon" src="prioritize.png" alt="icon representing a checklist and timer" width="200" height="100" class="img-fluid">
-  <li>
-    Managing a project requires a great amount of attention. To be successful you must be able to prioritize while keeping in mind deadlines. Being able to focus on multiple things and keep them on
-    track is a huge factor in a projects outcome.
-  </li>
-  <br>
-  <img id="learnedicon" src="team.png" alt="icon representing a team" width="200" height="100" class="img-fluid">
-  <li>
-    Delegating tasks is just as important as being able to prioritize. When a project requires multiple tasks to be done at the same time there might not be enough time or resources for one person
-    to complete it themselves. This is why delegating is important. It can save a project and while creating this site it was essential that I delegate tasks so the deadline was met.
-  </li>
-  <br>
-  <br>
-  <img id="learnedicon" src="leader.png" alt="icon representing an idea" width="200" height="100" class="img-fluid">
-  <li>
-      Being able to prioritize and delegate is important but to be an effective leader you must know how to communicate with people. This is more than listening and responding to them, it's a more
-      active skill that requires you to understand a person and empathize with their needs. When you are able to understand their needs you are able to be a better leader.
-  </li>
-  <br>
-  <br>
-</ol>
-</p>
-</div>
-<h2>Deliverables</h2>
-<p id="Deliverables">
-The final deliverable was a professional eCommerce site for the client to display their art and monetize it.
-<br>
-<br>
-<br>
-<h2 id="sitelink"><a href="https://moderatelycoolclothing.com">Professional eCommerce Site</a></h2>
-</p>
-<div id="credit">
-  <p>Site Design and Build by Colton Almaraz</p>
-</div>
-  </div>
-</div>
-<script>
-mybutton = document.getElementById("myBtn");
+    <script>
+      mybutton = document.getElementById("myBtn");
 
 
-window.onscroll = function() {scrollFunction()};
+      window.onscroll = function () {
+        scrollFunction()
+      };
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
 
 
-function topFunction() {
-  document.body.scrollTop = 0; 
-  document.documentElement.scrollTop = 0; 
-}
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
 
-function openNav() {
-  document.getElementById("mySidenav").style.width = "100%";
-}
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+      }
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-} 
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      darkMode = () => {
+        let elements = [];
+        let black_elements = [];
+        let grey_elements = [];
+        let p = document.getElementsByTagName('P');
+        let a = document.getElementsByTagName('A');
+        let li = document.getElementsByTagName('LI');
+        let h1 = document.getElementsByTagName('H1');
+        let h2 = document.getElementsByTagName('H2');
+        let h3 = document.getElementsByTagName('H3');
+        let h4 = document.getElementsByTagName('H4');
+        let rec = document.getElementById('rec');
+        let img = document.getElementsByClassName('darkmode');
+        elements.push(p, a, li, h1, h2, h3, h4);
+        grey_elements.push(p, a, li, h3, h4);
+        black_elements.push(h1, h2);
+        var mediaQuery = window.matchMedia("(max-width: 700px)");
 
-</script>
-  </body>
+        if (document.getElementById('checkbox').checked) {
+          for (let i = 0; i < img.length; i++) {
+            img[i].style.cssText = '-webkit-filter: invert(1); filter: invert(1);';
+          }
+          document.getElementById('switch-label').textContent = 'Light Mode';
+          document.body.style.backgroundColor = "#000000";
+          rec.style.cssText = 'background-color: #ffffff;';
+          document.getElementById('projectoverview').style.cssText =
+            'border-right: 5px solid #ffffff; border-left: 5px solid #ffffff;  padding-left: 1%;  padding-right: 1%;';
+          for (let i = 0; i < elements.length; i++) {
+            for (let j = 0; j < elements[i].length; j++) {
+              elements[i][j].style.color = '#ffffff'
+            }
+          }
+          if (mediaQuery.matches) {
+            document.getElementById('switch-label').style.color = '#000000';
+            document.getElementById('switch-label').style.fontWeight = '300';
+            document.querySelector('.slider').style.backgroundColor = '#cecece';
+          }
+        } else if (document.getElementById('checkbox').checked === false) {
+          for (let i = 0; i < img.length; i++) {
+            img[i].style.cssText = '-webkit-filter: invert(0); filter: invert(0);';
+          }
+          document.getElementById('switch-label').textContent = 'Dark Mode';
+          document.body.style.backgroundColor = "#ffffff";
+          rec.style.cssText = 'background-color: #000000;';
+          document.getElementById('projectoverview').style.cssText =
+            'border-right: 5px solid #000000; border-left: 5px solid #000000;  padding-left: 1%;  padding-right: 1%;';
+          for (let i = 0; i < grey_elements.length; i++) {
+            for (let j = 0; j < grey_elements[i].length; j++) {
+              grey_elements[i][j].style.color = '#696969'
+            }
+          }
+          for (let i = 0; i < black_elements.length; i++) {
+            for (let j = 0; j < black_elements[i].length; j++) {
+              black_elements[i][j].style.color = '#000000'
+            }
+          }
+          if (mediaQuery.matches) {
+            document.getElementById('switch-label').style.color = '#ffffff';
+            document.getElementById('switch-label').style.fontWeight = '300';
+            document.querySelector('.slider').style.backgroundColor = '#ffffff';
+
+          }
+        }
+      }
+    </script>
+</body>
+
 </html>

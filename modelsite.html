@@ -1,167 +1,268 @@
 </<!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-     <link href="https://fonts.googleapis.com/css?family=Jomolhari&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="modelsite.css">
-    <title>Model Portfolio Site Page</title>
-  </head>
-  <body>
-    <div id="mobilenav"> 
-      <div id="rec"> </div>
-      <span onclick="openNav()"><img src="mobilenav.png" alt="three horizontal lined representing a menu" sheight=40 width=40/></span>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Jomolhari&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="project-style.css">
+  <title>Model Portfolio Site Page</title>
+</head>
+
+<body>
+  <div id="mobilenav">
+    <div id="rec"> </div>
+    <span onclick="openNav()"><img class='darkmode' src="mobilenav.png" alt="three horizontal lined representing a menu"
+        sheight=40 width=40 /></span>
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a onClick="closeNav()" href="index.html"><img src="home.png" alt= "home icon" height=100 width=100/>Home</a>
-      <a onClick="closeNav()" href="index.html#resume"><img src="resume_icon.png" alt= "resume icon" height=100 width=100/>Resume</a>
-      <a onClick="closeNav()" href="index.html#projects"><img src="projects_icon.png" alt= "project list icon" height=100 width=100/>Projects</a>
-      <a onClick="closeNav()" href="index.html#contact"><img src="email_white.png" alt= "email icon" height=100 width=100/>Contact</a>
+      <a onClick="closeNav()" href="index.html"><img src="home.png" alt="home icon" height=100 width=100 />Home</a>
+      <a onClick="closeNav()" href="index.html#resume"><img src="resume_icon.png" alt="resume icon" height=100
+          width=100 />Resume</a>
+      <a onClick="closeNav()" href="index.html#projects"><img src="projects_icon.png" alt="project list icon" height=100
+          width=100 />Projects</a>
+      <a onClick="closeNav()" href="index.html#contact"><img src="email_white.png" alt="email icon" height=100
+          width=100 />Contact</a>
     </div>
   </div>
 
+  <div id='switch-container'>
+    <p id='switch-label'>Dark Mode</p>
+    <label class="switch">
+      <input type="checkbox" id='checkbox' onclick="darkMode();">
+      <span class="slider round"></span>
+    </label>
+  </div>
+  <div class="container">
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="scroll.png" alt="scroll up icon" width="50"
+        height="50" class="img-fluid darkmode"></button>
+    <div id="nav">
+      <div id="home">
+        <a href="index.html"><img class='darkmode' src="home_black.png" alt="home icon" height=50 width=50></a>
+      </div>
+    </div>
+    <div id="main" class="row">
+      <div class="column" align="center">
+        <h1 id="pagetitle">Model Portfolio Site</h1><br /><br />
+        <h2 id="summary">A simple site to display high quality modeling photos for agencies and clients.</h2>
+        <br><br><br>
 
-    <div class="container">
-    <button  onclick="topFunction()" id="myBtn" title="Go to top"><img src="scroll.png" alt="scroll up icon" width="50" height="50" class="img-fluid"></button>
-      <div id="nav">
-        <div id="home">
-          <a href="index.html"><img src="home_black.png" alt= "home icon" height=50 width=50></a>
+        <h2>Project Overview</h2><br>
+        <div id="projectoverview">
+          <h3>Challenge:</h3>
+          <p>
+            Design a way to best display a large amount of photos in a way that doesn't overwhelm the user. The photos
+            need to easily accessible to featured
+            on the front page prominently. This site would be the main way the client would get work so it was extremely
+            important that the design let the client
+          </p>
+          <br>
+          <br>
+          <h3>Team:</h3>
+          <p id='team'>
+            Myself
+          </p>
+        </div>
+        <img id="homepage" src="modelsitehome.png" alt="home page of project" width="700" height="550"
+          class="img-fluid">
+        <div id="process">
+          <br>
+          <h2>The Process</h2>
+          <br>
+          <br>
+          <h3>What is the Goal?</h3>
+          <p>
+            To create and easy to use platform for the client to upload their content for agencies and potential
+            employers to see. It was extremely important
+            that this site be easily accessible by the client. My main concern was that the client be able to upload new
+            pictures and edit their appearance
+            on the site any time they want with no trouble. Managing content should not be a hindrance to the creation
+            of content, it should facilitate it.
+            Modeling was their passion and I felt an obligation to create something amazing for them to reflect their
+            love of modeling.
+          </p>
+
+          <div>
+            <br>
+            <br>
+            <br>
+            <h4>Necessities:</h4>
+            <br>
+            <div id="necessities">
+              <ul>
+                <li>Easy to use CMS</li>
+                <li>Sleek, minimalist design </li>
+                <li>Focus on the images</li>
+                <li>Accessible</li>
+                <li>Easily navigable IA</li>
+                <li>Simple UI</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div id="book">
+          <h3>Booking</h3>
+          <p>
+            Bookings are the main way models generate income. It was essential that the user be able to find a way to
+            contact client if they need to.
+            To do this I made a simple page in which the user could send a message directly to the client's email with a
+            pre-determined subject. This was
+            an important part of the UX so the client can sort through their email and find only the ones relating to
+            bookings. Being able to access data when
+            you want it but having it out of the way when you don't is a cornerstone of a good user experience.
+          </p>
+          <img id="learnedicon" src="bookmodelpage.png" alt="page to book the client" width="700" height="550"
+            class="img-fluid">
+        </div>
+        <br>
+        <br>
+        <br>
+        <div id=learned>
+          <h2>What I Learned</h2>
+          <p>
+            <ol>
+              <img id="learnedicon" src="communication.png" alt="icon representing what was learned" width="200"
+                height="100" class="img-fluid darkmode">
+              <li>
+                Clear communication with the client is key to bringing their idea to life and creating the perfect
+                product for them. Being a UX designer is more than just
+                designing, it is connecting with other people.
+              </li>
+              <br>
+              <img id="learnedicon" src="why.png" alt="#a11y" width="200" height="100" class="img-fluid darkmode">
+              <li>
+                To design something means to know the user. Effectively creating a space means the designer must
+                understand the user. This is not just
+                asking simple "yes" or "no" questions. It is understanding WHAT the user is doing, WHY they are doing
+                it, and HOW they are accomplishing that.
+              </li>
+              <br>
+              <img id="learnedicon" src="connection.png" alt="icon representing what was learned" width="200"
+                height="100" class="img-fluid darkmode">
+              <li>
+                Creating something so close to a person's passion is a huge responsibility. This means the designer must
+                connect with the user and the client to understand them.
+                This goes beyond asking WHAT, WHY, and HOW. The designer must empathize with the user and create a
+                connection with them.
+              </li>
+              <br>
+            </ol>
+          </p>
+        </div>
+        <h2>Deliverables</h2>
+        <p id="Deliverables">
+          The final deliverable was a professional portfolio site for the client to display their content for potential
+          future employment as a model.
+          <br>
+          <br>
+          <br>
+          <h2 id="link"><a href="https://daliamodeling.com">Professional Modeling Portfolio Site</a></h2>
+        </p>
+        <div id="credit">
+          <p>Site Design and Build by Colton Almaraz</p>
         </div>
       </div>
-      <div id ="main" class="row">
-        <div class="column" align="center">
-  <h1 id="pagetitle">Model Portfolio Site</h1><br /><br />  
-<h2 id="summary">A simple site to display high quality modeling photos for agencies and clients.</h2><br><br><br>
-
-    <h2>Project Overview</h2><br>
-    <div id="projectoverview">
-      <h3>Challenge:</h3>
-      <p>
-        Design a way to best display a large amount of photos in a way that doesn't overwhelm the user. The photos need to easily accessible to featured
-        on the front page prominently. This site would be the main way the client would get work so it was extremely  important that the design let the client
-      </p>
-      <h3>Team:</h3>
-      <p>
-        Myself
-      </p>
     </div>
-    <img id="homepage" src="modelsitehome.png" alt="home page of project" width="700" height="550" class="img-fluid">
-    <div id="process">
-    <br>
-    <h2>The Process</h2>
-    <br>
-    <br>
-    <h3>What is the Goal?</h3>
-    <p>
-      To create and easy to use platform for the client to upload their content for agencies and potential employers to see. It was extremely important
-      that this site be easily accessible by the client. My main concern was that the client be able to upload new pictures and edit their appearance
-      on the site any time they want with no trouble. Managing content should not be a hindrance to the creation of content, it should facilitate it.
-      Modeling was their passion and I felt an obligation to create something amazing for them to reflect their
-      love of modeling.
-    </p>
-
-<div>
-<br>
-<br>
-<br>
-<h4>Necessities:</h4>
-<br>
-<div id="necessities">
-  <ul>
-    <li>Easy to use CMS</li>
-    <li>Sleek, minimalist design </li>
-    <li>Focus on the images</li>
-    <li>Accessible</li>
-    <li>Easily navigable IA</li>
-    <li>Simple UI</li>
-  </ul>
   </div>
-</div>
-</div>
-<br>
-<br>
-<div id="book">
-  <h3>Booking</h3>
-  <p>
-    Bookings are the main way models generate income. It was essential that the user be able to find a way to contact client if they need to.
-    To do this I made a simple page in which the user could send a message directly to the client's email with a pre-determined subject. This was
-    an important part of the UX so the client can sort through their email and find only the ones relating to bookings. Being able to access data when
-    you want it but having it out of the way when you don't is a cornerstone of a good user experience.
-  </p>
-  <img id="learnedicon" src="bookmodelpage.png" alt="page to book the client" width="700" height="550" class="img-fluid">
-</div>
-<br>
-<br>
-<br>
-<div id=learned>
-<h2>What I Learned</h2>
-<p>
-<ol>
-<img id="learnedicon" src="communication.png" alt="icon representing what was learned" width="200" height="100" class="img-fluid">
-<li>
-Clear communication with the client is key to bringing their idea to life and creating the perfect product for them. Being a UX designer is more than just
-designing, it is connecting with other people.
-</li>
-<br>
-<img id="learnedicon" src="why.png" alt="#a11y" width="200" height="100" class="img-fluid">
-<li>
-To design something means to know the user. Effectively creating a space means the designer must understand the user. This is not just
-asking simple "yes" or "no" questions. It is understanding WHAT the user is doing, WHY they are doing it, and HOW they are accomplishing that.
-</li>
-<br>
-<img id="learnedicon" src="connection.png" alt="icon representing what was learned" width="200" height="100" class="img-fluid">
-<li>
-Creating something so close to a person's passion is a huge responsibility. This means the designer must connect with the user and the client to understand them.
-This goes beyond asking WHAT, WHY, and HOW. The designer must empathize with the user and create a connection with them.
-</li>
-<br>
-</ol>
-</p>
-</div>
-<h2>Deliverables</h2>
-<p id="Deliverables">
-The final deliverable was a professional portfolio site for the client to display their content for potential future employment as a model.
-<br>
-<br>
-<br>
-<h2 id="sitelink"><a href="https://daliamodeling.com">Professional Modeling Portfolio Site</a></h2>
-</p>
-<div id="credit">
-  <p>Site Design and Build by Colton Almaraz</p>
-</div>
-  </div>
-</div>
-</div>
-<script>
-mybutton = document.getElementById("myBtn");
+  <script>
+    mybutton = document.getElementById("myBtn");
 
 
-window.onscroll = function() {scrollFunction()};
+    window.onscroll = function () {
+      scrollFunction()
+    };
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
 
 
-function topFunction() {
-  document.body.scrollTop = 0; 
-  document.documentElement.scrollTop = 0; 
-}
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
 
-function openNav() {
-  document.getElementById("mySidenav").style.width = "100%";
-}
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "100%";
+    }
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-} 
-</script>
-  </body>
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    darkMode = () => {
+      let elements = [];
+      let black_elements = [];
+      let grey_elements = [];
+      let p = document.getElementsByTagName('P');
+      let a = document.getElementsByTagName('A');
+      let li = document.getElementsByTagName('LI');
+      let h1 = document.getElementsByTagName('H1');
+      let h2 = document.getElementsByTagName('H2');
+      let h3 = document.getElementsByTagName('H3');
+      let h4 = document.getElementsByTagName('H4');
+      let rec = document.getElementById('rec');
+      let img = document.getElementsByClassName('darkmode');
+      elements.push(p, a, li, h1, h2, h3, h4);
+      grey_elements.push(p, a, li, h3, h4);
+      black_elements.push(h1, h2);
+      var mediaQuery = window.matchMedia("(max-width: 700px)");
+
+      if (document.getElementById('checkbox').checked) {
+        for (let i = 0; i < img.length; i++) {
+          img[i].style.cssText = '-webkit-filter: invert(1); filter: invert(1);';
+        }
+        document.getElementById('switch-label').textContent = 'Light Mode';
+        document.body.style.backgroundColor = "#000000";
+        rec.style.cssText = 'background-color: #ffffff;';
+        document.getElementById('projectoverview').style.cssText =
+          'border-right: 5px solid #ffffff; border-left: 5px solid #ffffff;  padding-left: 1%;  padding-right: 1%;';
+        for (let i = 0; i < elements.length; i++) {
+          for (let j = 0; j < elements[i].length; j++) {
+            elements[i][j].style.color = '#ffffff'
+          }
+        }
+        if (mediaQuery.matches) {
+          document.getElementById('switch-label').style.color = '#000000';
+          document.getElementById('switch-label').style.fontWeight = '300';
+          document.querySelector('.slider').style.backgroundColor = '#cecece';
+        }
+      } else if (document.getElementById('checkbox').checked === false) {
+        for (let i = 0; i < img.length; i++) {
+          img[i].style.cssText = '-webkit-filter: invert(0); filter: invert(0);';
+        }
+        document.getElementById('switch-label').textContent = 'Dark Mode';
+        document.body.style.backgroundColor = "#ffffff";
+        rec.style.cssText = 'background-color: #000000;';
+        document.getElementById('projectoverview').style.cssText =
+          'border-right: 5px solid #000000; border-left: 5px solid #000000;  padding-left: 1%;  padding-right: 1%;';
+        for (let i = 0; i < grey_elements.length; i++) {
+          for (let j = 0; j < grey_elements[i].length; j++) {
+            grey_elements[i][j].style.color = '#696969'
+          }
+        }
+        for (let i = 0; i < black_elements.length; i++) {
+          for (let j = 0; j < black_elements[i].length; j++) {
+            black_elements[i][j].style.color = '#000000'
+          }
+        }
+        if (mediaQuery.matches) {
+          document.getElementById('switch-label').style.color = '#ffffff';
+          document.getElementById('switch-label').style.fontWeight = '300';
+          document.querySelector('.slider').style.backgroundColor = '#ffffff';
+
+        }
+      }
+    }
+  </script>
+</body>
+
 </html>

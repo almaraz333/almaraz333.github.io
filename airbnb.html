@@ -1,179 +1,293 @@
 </<!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-     <link href="https://fonts.googleapis.com/css?family=Jomolhari&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="airbnb.css">
-    <title>Airbnb Analysis Page</title>
-  </head>
-  <body>
-    <div id="mobilenav"> 
-      <div id="rec"> </div>
-      <span onclick="openNav()"><img src="mobilenav.png" alt="three horizontal lined representing a menu" sheight=40 width=40/></span>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Jomolhari&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="airbnb.css">
+  <title>Airbnb Analysis Page</title>
+</head>
+
+<body>
+  <div id="mobilenav">
+    <div id="rec"> </div>
+    <span onclick="openNav()"><img class='darkmode' src="mobilenav.png" alt="three horizontal lined representing a menu"
+        sheight=40 width=40 /></span>
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a onClick="closeNav()" href="index.html"><img src="home.png" alt= "home icon" height=100 width=100/>Home</a>
-      <a onClick="closeNav()" href="index.html#resume"><img src="resume_icon.png" alt= "resume icon" height=100 width=100/>Resume</a>
-      <a onClick="closeNav()" href="index.html#projects"><img src="projects_icon.png" alt= "project list icon" height=100 width=100/>Projects</a>
-      <a onClick="closeNav()" href="index.html#contact"><img src="email_white.png" alt= "email icon" height=100 width=100/>Contact</a>
+      <a onClick="closeNav()" href="index.html"><img src="home.png" alt="home icon" height=100 width=100 />Home</a>
+      <a onClick="closeNav()" href="index.html#resume"><img src="resume_icon.png" alt="resume icon" height=100
+          width=100 />Resume</a>
+      <a onClick="closeNav()" href="index.html#projects"><img src="projects_icon.png" alt="project list icon" height=100
+          width=100 />Projects</a>
+      <a onClick="closeNav()" href="index.html#contact"><img src="email_white.png" alt="email icon" height=100
+          width=100 />Contact</a>
     </div>
   </div>
-    <div class="container">
-      <button  onclick="topFunction()" id="myBtn" title="Go to top"><img src="scroll.png" alt="scroll up icon" width="50" height="50" class="img-fluid"></button>
-      <div id="nav">
-        <div id="home">
-          <a href="index.html"><img src="home_black.png" alt= "home icon" height=50 width=50></a>
-        </div>
+
+  <div id='switch-container'>
+    <p id='switch-label'>Dark Mode</p>
+    <label class="switch">
+      <input type="checkbox" id='checkbox' onclick="darkMode();">
+      <span class="slider round"></span>
+    </label>
+  </div>
+
+  <div class="container">
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="scroll.png" alt="scroll up icon" width="50"
+        height="50" class="img-fluid darkmode"></button>
+    <div id="nav">
+      <div id="home">
+        <a href="index.html"><img class='darkmode' src="home_black.png" alt="home icon" height=50 width=50></a>
       </div>
-      <div id ="main" class="row">
-        <div class="column" align="center">
-<img id="learnedicon" src="airbnblogo.png" alt="red airbnb logo" width="200" height="300" class="img-fluid"><br><br><br>
-<h1 id="pagetitle">Accessibility Analysis</h1><br /><br />
-<h2 id="summary">A Critical Analysis of the Airbnb Tech Blog and How it Could Improve to Make Tech Accessible for Everyone.</h2><br><br><br>
-
-    <h2>Project Overview</h2><br>
-    <div id="projectoverview">
-      <h3>Challenge:</h3>
-      <p>
-        Something that is looked over in the tech industry is the accessibility of tech blogs and ways to learn about software engineering for persons with disabilities. These tech blogs are a way for software engineers to stay up to date on some of the most cutting edge projects happening at these large tech companies. Being employed by these tech companies
-        like Airbnb is sought after and highly competitive.
-      </p>
-      <h3>Team:</h3>
-      <p>
-        A group of three User Experience students with the goal of improving usability and accessibility in the digital space.
-      </p>
     </div>
-    <img id="airbnbhome" src="airbnbtechhome.png" alt="screen shot of airbnb tech blog home page" width="700" height="550" class="img-fluid">
-    <div id="process">
-    <h2>The Process</h2>
-    <h3>What is the Goal?</h3>
-    <p>
-      To analyze and critique the content, purpose, and accessibility of the Airbnb Tech Blog. These blogs are a way for software engineers to stay up to date with what is going on in the industry and far too many times they
-      are bogged down by unnecessary content. Even worse is the fact that many times these blogs are highly inaccessible and leave a portion of developers with disabilities left out. This analysis will identify the reasons
-      this is on the Airbnb Tech Blog and how it could change.
-    </p>
-    <h3>What We Found</h3>
-    <h4>Accessibility</h4>
-    <img src="airbnbaccessibility.png" alt="screen shot of accessibility slide in airbnb presentation" width="500" height="350" class="img-fluid">
-<ul>
-<li>Airbnb's home page does not have proper heading structure although it does start with a h1, which is a good start</li>
-<li>Not all page elements are contained in landmarks</li>
-<li>Alt text on open source projects are not descriptive. Each one is different and they have the same alt text. They should all be set to empty set.</li>
-<li>Links to not have names</li>
-<li>There is no skip link over repetitive content like the nav</li>
-<li>Each section the blog and the open source sections should be in lists so its easier to users to nav through both sections</li>
-</ul>
-</div>
-<div class="suggestions">
-  <div>
-    <h4>What Airbnb Does Well:</h4>
-  <div id="doeswell">
-  <ul>
-  <li>Heading structure for detailed project page</li>
-  <li>Color Scheme (somewhat)</li>
-  <li>Good use images along with text</li>
-  <li>Colors contrast somewhat well</li>
-  <li>Images and titles to help distinguish what each post is about </li>
-  <li> Heading structure for detailed project page is great</li>
-  </ul>
-</div>
-</div>
-<div>
-<h4>What Airbnb Could Improve:</h4>
-<div id="improvements">
-  <ul>
-    <li>Add proper heading structure on home page</li>
-    <li>Add page elements that are  not contained in landmarks</li>
-    <li>Alt text on open source projects are not descriptive, each one is different and they have the same alt text. They should all be set to empty set.</li>
-    <li>Links do not have names</li>
-    <li>Add a  skip link over repetitive content like the nav</li>
-    <li>Each section the blog and the open source sections should be in lists so it's easier to users to nav through both sections</li>
-  </ul>
-  </div>
-</div>
+    <div id="main" class="row">
+      <div class="column" align="center">
+        <img id="learnedicon" src="airbnblogo.png" alt="red airbnb logo" width="200" height="300"
+          class="img-fluid"><br><br><br>
+        <h1 id="pagetitle">Accessibility Analysis</h1><br /><br />
+        <h2 id="summary">A Critical Analysis of the Airbnb Tech Blog and How it Could Improve to Make Tech Accessible
+          for Everyone.</h2><br><br><br>
 
-</div>
-
-<div id="oppertunities">
-      <h4>Opportunities:</h4>
-      <img src="airbnbtakeaways.png" alt="screen shot of take aways slide in airbnb presentation" width="500" height="350" class="img-fluid">
-          <div>
-            <ul>
-            <li>Airbnb's home page does not have proper heading structure although it does start with a h1, which is a good start</li>
+        <h2>Project Overview</h2><br>
+        <div id="projectoverview">
+          <h3>Challenge:</h3>
+          <p>
+            Something that is looked over in the tech industry is the accessibility of tech blogs and ways to learn
+            about software engineering for persons with disabilities. These tech blogs are a way for software engineers
+            to stay up to date on some of the most cutting edge projects happening at these large tech companies. Being
+            employed by these tech companies
+            like Airbnb is sought after and highly competitive.
+          </p>
+          <br>
+          <br>
+          <h3>Team:</h3>
+          <p>
+            A group of three User Experience students with the goal of improving usability and accessibility in the
+            digital space.
+          </p>
+        </div>
+        <img id="airbnbhome" src="airbnbtechhome.png" alt="screen shot of airbnb tech blog home page" width="700"
+          height="550" class="img-fluid">
+        <div id="process">
+          <h2>The Process</h2>
+          <h3>What is the Goal?</h3>
+          <p>
+            To analyze and critique the content, purpose, and accessibility of the Airbnb Tech Blog. These blogs are a
+            way for software engineers to stay up to date with what is going on in the industry and far too many times
+            they
+            are bogged down by unnecessary content. Even worse is the fact that many times these blogs are highly
+            inaccessible and leave a portion of developers with disabilities left out. This analysis will identify the
+            reasons
+            this is on the Airbnb Tech Blog and how it could change.
+          </p>
+          <h3>What We Found</h3>
+          <h4>Accessibility</h4>
+          <img src="airbnbaccessibility.png" alt="screen shot of accessibility slide in airbnb presentation" width="500"
+            height="350" class="img-fluid">
+          <ul>
+            <li>Airbnb's home page does not have proper heading structure although it does start with a h1, which is a
+              good start</li>
             <li>Not all page elements are contained in landmarks</li>
-            <li>Alt text on open source projects are not descriptive. Each one is different and they have the same alt text. They should all be set to empty set.</li>
+            <li>Alt text on open source projects are not descriptive. Each one is different and they have the same alt
+              text. They should all be set to empty set.</li>
             <li>Links to not have names</li>
             <li>There is no skip link over repetitive content like the nav</li>
-            <li>Each section the blog and the open source sections should be in lists so it's easier to users to nav through both sections</li>
+            <li>Each section the blog and the open source sections should be in lists so its easier to users to nav
+              through both sections</li>
+          </ul>
+        </div>
+        <div class="suggestions">
+          <div>
+            <h4>What Airbnb Does Well:</h4>
+            <div id="doeswell">
+              <ul>
+                <li>Heading structure for detailed project page</li>
+                <li>Color Scheme (somewhat)</li>
+                <li>Good use images along with text</li>
+                <li>Colors contrast somewhat well</li>
+                <li>Images and titles to help distinguish what each post is about </li>
+                <li> Heading structure for detailed project page is great</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <h4>What Airbnb Could Improve:</h4>
+            <div id="improvements">
+              <ul>
+                <li>Add proper heading structure on home page</li>
+                <li>Add page elements that are not contained in landmarks</li>
+                <li>Alt text on open source projects are not descriptive, each one is different and they have the same
+                  alt text. They should all be set to empty set.</li>
+                <li>Links do not have names</li>
+                <li>Add a skip link over repetitive content like the nav</li>
+                <li>Each section the blog and the open source sections should be in lists so it's easier to users to nav
+                  through both sections</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="oppertunities">
+          <h4>Opportunities:</h4>
+          <img src="airbnbtakeaways.png" alt="screen shot of take aways slide in airbnb presentation" width="500"
+            height="350" class="img-fluid">
+          <div>
+            <ul>
+              <li>Airbnb's home page does not have proper heading structure although it does start with a h1, which is a
+                good start</li>
+              <li>Not all page elements are contained in landmarks</li>
+              <li>Alt text on open source projects are not descriptive. Each one is different and they have the same alt
+                text. They should all be set to empty set.</li>
+              <li>Links to not have names</li>
+              <li>There is no skip link over repetitive content like the nav</li>
+              <li>Each section the blog and the open source sections should be in lists so it's easier to users to nav
+                through both sections</li>
             </ul>
           </div>
-      <br/>
-</div>
+          <br />
+        </div>
 
-<div id=learned>
-<h2>What I Learned</h2>
-<p>
-<ol>
-<img id="learnedicon" src="infoarch.png" alt="picture diagrammming information architecture" width="200" height="400" class="img-fluid">
-<li>
-Analyzing a site goes far beyond taking a simple glance at the home page. To truly understand the structure and information architecture of a site
-there must be a deep dive into the code.
-</li>
-<img id="learnedicon" src="a11y.png" alt="#a11y" width="200" height="100" class="img-fluid">
-<li>
-With issues related to accessibility extra care must be taken. It is not enough to simply look up what makes a certain type of content accessible;
-the creator must empathize with their users and understand their needs on a personal level.
-</li>
-<img id="learnedicon" src="communication.png" alt="two speech bubbels representing communication" width="150" height="100" class="img-fluid">
-<li>
-The most important factor to a teams success is effective communication. Only when there is an open dialogue can real positive change take place.
-This is true for any kind of project.
-</li>
-</ol>
-</p>
-</div>
-<h2>Deliverables</h2>
-<p id="Deliverables">
-The final deliverable was a concise presentation for other UX practitioners to see what can be done to change accessibility issues.
-<img src="airbnbslide1.png" alt="screen shot of first slide in airbnb presentation" width="500" height="350" class="img-fluid">
-</p>
-<div id="credit">
-  <p>Site Design and Build by Colton Almaraz</p>
-</div>
-  </div>
-</div>
-<script>
-mybutton = document.getElementById("myBtn");
-
-
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
+        <div id=learned>
+          <h2>What I Learned</h2>
+          <p>
+            <ol>
+              <img id="learnedicon" src="infoarch.png" alt="picture diagrammming information architecture" width="200"
+                height="400" class="img-fluid darkmode">
+              <li>
+                Analyzing a site goes far beyond taking a simple glance at the home page. To truly understand the
+                structure and information architecture of a site
+                there must be a deep dive into the code.
+              </li>
+              <img id="learnedicon" src="a11y.png" alt="#a11y" width="200" height="100" class="img-fluid darkmode">
+              <li>
+                With issues related to accessibility extra care must be taken. It is not enough to simply look up what
+                makes a certain type of content accessible;
+                the creator must empathize with their users and understand their needs on a personal level.
+              </li>
+              <img id="learnedicon" src="communication.png" alt="two speech bubbels representing communication"
+                width="150" height="100" class="img-fluid darkmode">
+              <li>
+                The most important factor to a teams success is effective communication. Only when there is an open
+                dialogue can real positive change take place.
+                This is true for any kind of project.
+              </li>
+            </ol>
+          </p>
+        </div>
+        <br>
+        <br>
+        <h2>Deliverables</h2>
+        <p id="Deliverables">
+          The final deliverable was a concise presentation for other UX practitioners to see what can be done to change
+          accessibility issues.
+          <img src="airbnbslide1.png" alt="screen shot of first slide in airbnb presentation" width="500" height="350"
+            class="img-fluid">
+        </p>
+        <div id="credit">
+          <p>Site Design and Build by Colton Almaraz</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      mybutton = document.getElementById("myBtn");
 
 
-function topFunction() {
-  document.body.scrollTop = 0; 
-  document.documentElement.scrollTop = 0; 
-}
+      window.onscroll = function () {
+        scrollFunction()
+      };
 
-function openNav() {
-  document.getElementById("mySidenav").style.width = "100%";
-}
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-} 
 
-</script>
-  </body>
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      darkMode = () => {
+        let elements = [];
+        let black_elements = [];
+        let grey_elements = [];
+        let p = document.getElementsByTagName('P');
+        let a = document.getElementsByTagName('A');
+        let li = document.getElementsByTagName('LI');
+        let h1 = document.getElementsByTagName('H1');
+        let h2 = document.getElementsByTagName('H2');
+        let h3 = document.getElementsByTagName('H3');
+        let h4 = document.getElementsByTagName('H4');
+        let rec = document.getElementById('rec');
+        let img = document.getElementsByClassName('darkmode');
+        elements.push(p, a, li, h1, h2, h3, h4);
+        grey_elements.push(p, a, li, h3, h4);
+        black_elements.push(h1, h2);
+        var mediaQuery = window.matchMedia("(max-width: 700px)");
+
+        if (document.getElementById('checkbox').checked) {
+          for (let i = 0; i < img.length; i++) {
+            img[i].style.cssText = '-webkit-filter: invert(1); filter: invert(1);';
+          }
+          document.getElementById('switch-label').textContent = 'Light Mode';
+          document.body.style.backgroundColor = "#000000";
+          rec.style.cssText = 'background-color: #ffffff;';
+          document.getElementById('projectoverview').style.cssText =
+            'border-right: 5px solid #ffffff; border-left: 5px solid #ffffff;  padding-left: 1%;  padding-right: 1%;';
+          for (let i = 0; i < elements.length; i++) {
+            for (let j = 0; j < elements[i].length; j++) {
+              elements[i][j].style.color = '#ffffff'
+            }
+          }
+          if (mediaQuery.matches) {
+            document.getElementById('switch-label').style.color = '#000000';
+            document.getElementById('switch-label').style.fontWeight = '300';
+            document.querySelector('.slider').style.backgroundColor = '#cecece';
+          }
+        } else if (document.getElementById('checkbox').checked === false) {
+          for (let i = 0; i < img.length; i++) {
+            img[i].style.cssText = '-webkit-filter: invert(0); filter: invert(0);';
+          }
+          document.getElementById('switch-label').textContent = 'Dark Mode';
+          document.body.style.backgroundColor = "#ffffff";
+          rec.style.cssText = 'background-color: #000000;';
+          document.getElementById('projectoverview').style.cssText =
+            'border-right: 5px solid #000000; border-left: 5px solid #000000;  padding-left: 1%;  padding-right: 1%;';
+          for (let i = 0; i < grey_elements.length; i++) {
+            for (let j = 0; j < grey_elements[i].length; j++) {
+              grey_elements[i][j].style.color = '#696969'
+            }
+          }
+          for (let i = 0; i < black_elements.length; i++) {
+            for (let j = 0; j < black_elements[i].length; j++) {
+              black_elements[i][j].style.color = '#000000'
+            }
+          }
+          if (mediaQuery.matches) {
+            document.getElementById('switch-label').style.color = '#ffffff';
+            document.getElementById('switch-label').style.fontWeight = '300';
+            document.querySelector('.slider').style.backgroundColor = '#ffffff';
+
+          }
+        }
+      }
+    </script>
+</body>
+
 </html>
