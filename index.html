@@ -20,11 +20,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Jomolhari&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
   <link rel="stylesheet" href="home.css">
+  <script src="portfolio.js"></script> 
   <title>Colton Almaraz Portfolio Site</title>
 </head>
 
-<body>
+<body onload="checkDarkMode()">
   <div id="mobilenav">
     <div id="rec"> </div>
     <span onclick="openNav()"><img class='darkmode' src="mobilenav.png" alt="three horizontal lined representing a menu"
@@ -136,7 +138,7 @@
               <p>
                 <h4>Sherlockian | <a id="resume-link" href="https://sherlockian.net">sherlockian.net</a> | East Lansing
                   <br> <strong>Front End Developer and UX Designer</strong><br><br>
-                  November 2019 - PRESENT</h4><br><br>
+                  November 2019 - May 2020</h4><br><br>
                 <ul>
                   <li>Worked alongside a team of MSU professors and developers to create an accessible, user friendly
                     database for all things related to Sherlock Holmes</li><br><br>
@@ -148,7 +150,7 @@
                 </ul>
               </p>
               <p>
-                <h4>Freelance, East Lansing <br> <strong>Front-End Developer/UX Designer</strong><br><br>
+                <h4>Freelance, East Lansing <br> <strong>Front-End Developer and UX Designer</strong><br><br>
                   October 2019 - PRESENT</h4><br><br>
                 <ul>
                   <li>Created eCommerce, portfolio, and database driven sites for a variety of clients in all levels of
@@ -214,6 +216,15 @@
 
             <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
             <div class="row" id="projectgrid">
+              <div class="col project">
+                <div class='projecttitle'>
+                  <h1>Search Recipes JavaScript Web App</h1>
+                </div>
+                </b><br><br>
+                <a href="search-recipes.html"><img src="fork.png"
+                    alt="icon fork and knife" width="200" height="200" class="img-fluid"></a>
+              </div>
+
               <div class="col project">
                 <div class='projecttitle'>
                   <h1>Sherlockian.net Site Redesign</h1>
@@ -298,132 +309,8 @@
       </div>
     </div>
   </div>
-
-  <script>
-    let time = new Date().getHours();
-    let greeting;
-
-    let morning = ("Good morning!");
-    let afternoon = ("Good afternoon!");
-    let evening = ("Good evening!");
-    let other = ("Hello!");
-
-    if (time >= 0 && time < 12) {
-      greeting = morning;
-
-    } else if (time >= 12 && time < 18) {
-      greeting = afternoon;
-
-    } else if (time >= 17 && time < 24) {
-      greeting = evening;
-
-    } else {
-      greeting = other;
-    }
-
-    document.getElementById("greeting").innerHTML = greeting;
-
-
-    mybutton = document.getElementById("myBtn");
-    buttonlabel = document.getElementById('button-label');
-
-    window.onscroll = function () {
-      scrollFunction()
-    };
-
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-        buttonlabel.style.display = "none";
-      } else {
-        mybutton.style.display = "none";
-        buttonlabel.style.display = "block";
-      }
-    }
-
-
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-
-
-
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "100%";
-    }
-
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-    }
-
-    darkMode = () => {
-      let elements = [];
-      let black_elements = [];
-      let grey_elements = [];
-      let p = document.getElementsByTagName('P');
-      let a = document.getElementsByTagName('A');
-      let li = document.getElementsByTagName('LI');
-      let h1 = document.getElementsByTagName('H1');
-      let h2 = document.getElementsByTagName('H2');
-      let h3 = document.getElementsByTagName('H3');
-      let h4 = document.getElementsByTagName('H4');
-      let project = document.getElementsByClassName('projecttitle');
-      let rec = document.getElementById('rec');
-      let img = document.getElementsByClassName('darkmode');
-      elements.push(p, a, li, h1, h2, h3, h4);
-      grey_elements.push(p, a, li, h3, h4);
-      black_elements.push(h1, h2);
-      var mediaQuery = window.matchMedia("(max-width: 700px)");
-      if (document.getElementById('checkbox').checked) { // Dark Mode On
-        for (let i = 0; i < img.length; i++) {
-          img[i].style.cssText = '-webkit-filter: invert(1); filter: invert(1);';
-        }
-        document.getElementById('switch-label').textContent = 'Light Mode';
-        document.body.style.backgroundColor = "#000000";
-        rec.style.cssText = 'background-color: #ffffff;';
-        for (let i = 0; i < project.length; i++) {
-          project[i].style.cssText = 'border-bottom: solid #ffffff 5px;';
-        }
-        for (let i = 0; i < elements.length; i++) {
-          for (let j = 0; j < elements[i].length; j++) {
-            elements[i][j].style.color = '#ffffff'
-          }
-        }
-        if (mediaQuery.matches) {
-          document.getElementById('switch-label').style.color = '#000000';
-          document.getElementById('switch-label').style.fontWeight = '300';
-          document.querySelector('.slider').style.backgroundColor = '#cecece';
-        }
-      } else if (document.getElementById('checkbox').checked === false) { //Dark Mode Off
-        for (let i = 0; i < img.length; i++) {
-          img[i].style.cssText = '-webkit-filter: invert(0); filter: invert(0);';
-        }
-        document.getElementById('switch-label').textContent = 'Dark Mode';
-        document.body.style.backgroundColor = "#ffffff";
-        rec.style.cssText = 'background-color: #000000;';
-        for (let i = 0; i < project.length; i++) {
-          project[i].style.cssText = 'border-bottom: solid #000000 5px;';
-        }
-        for (let i = 0; i < grey_elements.length; i++) {
-          for (let j = 0; j < grey_elements[i].length; j++) {
-            grey_elements[i][j].style.color = '#696969'
-          }
-        }
-        for (let i = 0; i < black_elements.length; i++) {
-          for (let j = 0; j < black_elements[i].length; j++) {
-            black_elements[i][j].style.color = '#000000'
-          }
-        }
-        if (mediaQuery.matches) {
-          document.getElementById('switch-label').style.color = '#ffffff';
-          document.getElementById('switch-label').style.fontWeight = '300';
-          document.querySelector('.slider').style.backgroundColor = '#ffffff';
-
-        }
-      }
-    }
-  </script>
+  <script src="portfolio.js"></script> 
+  
 </body>
 
 </html>

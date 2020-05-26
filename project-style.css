@@ -102,11 +102,6 @@ input:checked+.slider:before {
   padding-right: 1%;
 }
 
-li,
-p {
-  text-align: left;
-}
-
 #team {
   text-align: center;
 }
@@ -135,9 +130,10 @@ a {
 p,
 li {
   font-size: 1.7em;
-  color: #242424;
+  color: #696969;
   text-decoration: none;
   font-weight: 300;
+  text-align: left;
 }
 
 h1 {
